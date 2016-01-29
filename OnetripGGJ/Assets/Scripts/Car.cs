@@ -17,9 +17,9 @@ public class Car : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(transform.right * -1, 1 * Time.deltaTime);
-        }
+            transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
     }
 
 	void FixedUpdate ()
