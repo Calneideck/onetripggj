@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Car : MonoBehaviour
 {
+    public GameObject letterPrefab;
     public float speed;
     public float maxSpeed;
     public float rotationSpeed;
@@ -20,6 +21,9 @@ public class Car : MonoBehaviour
             transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
         if (Input.GetKey(KeyCode.D))
             transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            DropLetter();
     }
 
 	void FixedUpdate ()
@@ -32,5 +36,10 @@ public class Car : MonoBehaviour
 
         if (rb.velocity.magnitude > maxSpeed)
             rb.velocity = rb.velocity.normalized * maxSpeed;
+    }
+
+    void DropLetter()
+    {
+        GameObject.Instantiate(letterPrefab, transform.position + Vector3.down, Quaternion.identity);
     }
 }
