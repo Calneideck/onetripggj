@@ -40,6 +40,7 @@ public class Car : MonoBehaviour
 
     void DropLetter()
     {
-        GameObject.Instantiate(letterPrefab, transform.position + Vector3.down, Quaternion.identity);
+        GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
+        letter.GetComponent<Rigidbody>().AddTorque(Vector3.one,ForceMode.Impulse);
     }
 }
