@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Audio;
 
@@ -74,7 +75,7 @@ public class StartOptions : MonoBehaviour {
 		showPanels.HideMenu ();
 
 		//Load the selected scene, by scene index number in build settings
-		Application.LoadLevel (sceneToStart);
+        SceneManager.LoadScene(sceneToStart);
 	}
 
 
