@@ -6,14 +6,8 @@ public class LetterFlyToCar : MonoBehaviour
     public float flyingTime;
 
     private Transform car;
-    private Rigidbody rb;
     private bool flying = false;
     private float startTime;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
 
     public void SetCar(Transform car)
     {
@@ -25,6 +19,7 @@ public class LetterFlyToCar : MonoBehaviour
     {
         flying = true;
         startTime = Time.time;
+        //GetComponent<Rigidbody>().useGravity = false;
     }
 
     void Update()
