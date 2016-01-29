@@ -40,7 +40,10 @@ public class Car : MonoBehaviour
 
     void DropLetter()
     {
+        // create the letter, giving it a bit of spin and turning triggers off so it collides with the world
+
         GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
         letter.GetComponent<Rigidbody>().AddTorque(Vector3.one,ForceMode.Impulse);
+        letter.GetComponent<BoxCollider>().isTrigger = false;
     }
 }

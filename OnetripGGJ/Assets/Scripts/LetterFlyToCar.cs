@@ -4,34 +4,32 @@ using System.Collections;
 public class LetterFlyToCar : MonoBehaviour
 {
     public float flyingTime;
+    public float flySpeed;
 
     private Transform car;
     private bool flying = false;
     private float startTime;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     public void SetCar(Transform car)
     {
-        this.car = car;
-        Invoke("StartFlying", 0);
-    }
+        // set the car transform and setup for flying as well as giving the letter a bit of spin
 
-    void StartFlying()
-    {
+        this.car = car;
         flying = true;
         startTime = Time.time;
-        //GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().AddTorque(Vector3.one, ForceMode.Impulse);
     }
 
-    void Update()
+    void FixedUpdate()
     {
+        // Move the letter towards the car
         if (flying)
-        {
-            Vector3 pos = transform.position;
-
-            float t = (Time.time - startTime) / flyingTime;
-
-            pos = Vector3.Lerp(pos, car.position, t);
-            transform.position = pos;
-        }
+            rb.velocity = (car.position - transform.position).normalized * flySpeed;
     }
 }

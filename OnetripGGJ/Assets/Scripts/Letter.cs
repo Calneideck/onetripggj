@@ -9,12 +9,17 @@ public class Letter : MonoBehaviour
 
     void OnCollisionEnter(Collision coll)
     {
+        // wait for 'removetime' seconds before removing the letter when it collides with the world
         if (!removing)
         {
             removing = true;
             Invoke("Remove", removeTime);
         }
-        if (coll.collider.tag == "Player")
+    }
+
+    void OnTriggerEnter(Collider coll)
+    {
+        if (coll.tag == "Player")
             Remove();
     }
 
