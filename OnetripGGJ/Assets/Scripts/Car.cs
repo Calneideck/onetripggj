@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Car : MonoBehaviour
 {
     public GameObject letterPrefab;
-    public float speed;
+    public float accel;
     public float maxSpeed;
     public float rotationSpeed;
+    public Text packageCountText;
+    public Text currentPackageText;
 
     private Rigidbody rb;
+    private int packageCount = 0;
+    private HouseStruct currentPackage;
 
     void Start ()
     {
@@ -17,6 +22,8 @@ public class Car : MonoBehaviour
 	
     void Update()
     {
+        // Steering
+
         if (Input.GetKey(KeyCode.A))
             transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
         if (Input.GetKey(KeyCode.D))
@@ -28,11 +35,13 @@ public class Car : MonoBehaviour
 
 	void FixedUpdate ()
     {
+        // Forward and reverse movement
+
         if (Input.GetKey(KeyCode.W))
-            rb.AddForce(transform.forward * speed);
+            rb.AddForce(transform.forward * accel);
 
         if (Input.GetKey(KeyCode.S))
-            rb.AddForce(transform.forward * -1 * speed);
+            rb.AddForce(transform.forward * -1 * accel);
 
         if (rb.velocity.magnitude > maxSpeed)
             rb.velocity = rb.velocity.normalized * maxSpeed;
@@ -42,8 +51,34 @@ public class Car : MonoBehaviour
     {
         // create the letter, giving it a bit of spin and turning triggers off so it collides with the world
 
-        GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
-        letter.GetComponent<Rigidbody>().AddTorque(Vector3.one,ForceMode.Impulse);
-        letter.GetComponent<BoxCollider>().isTrigger = false;
+        if (packageCount > 0)
+        {
+            GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
+            letter.GetComponent<Rigidbody>().AddTorque(Vector3.one, ForceMode.Impulse);
+            letter.GetComponent<BoxCollider>().isTrigger = false;
+
+            packageCount--;
+            packageCountText.text = "Packages: " + packageCount.ToString();
+
+            if (packageCount > 0)
+                NewPackage();
+            else
+                currentPackageText.text = "No Package";
+        }
+    }
+
+    public void ReceivedLetter()
+    {
+        packageCount++;
+        packageCountText.text = "Packages: " + packageCount.ToString();
+
+        if (packageCount == 1)
+            NewPackage();
+    }
+
+    public void NewPackage()
+    {
+        currentPackage = new HouseStruct(true);
+        currentPackageText.text = currentPackage.colour.ToString() + " - " + currentPackage.packageType.ToString();
     }
 }
