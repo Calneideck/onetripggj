@@ -29,6 +29,7 @@ public class Car : MonoBehaviour
     private float remainingTime;
     private float bonusTime;
     private bool started = false;
+    private bool go = false;
 
     void Start ()
     {
@@ -67,6 +68,11 @@ public class Car : MonoBehaviour
             {
                 countdownTime = 3 - (Time.time - countdownStartTime);
                 countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime + 1));
+            }
+            else if (!go)
+            {
+                countdownText.gameObject.SetActive(false);
+                go = true;
             }
         }
         else
