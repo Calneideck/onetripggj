@@ -57,32 +57,7 @@ public class Car : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
                 DropLetter();
 
-            // Game timer
-            remainingTime = initialTime - (Time.time - gameStartTime) + bonusTime;
-
-            if (remainingTime < 0)
-            {
-                remainingTime = 0;
-
-                if (!gameOver)
-                {
-                    GameObject.Find("UI").GetComponent<ShowPanels>().EndScreen(true);
-                    gameOver = true;
-                }
-            }
-
-            timeText.text = "Time: " + Mathf.Ceil(remainingTime);
-
-            if (countdownTime >= -1)
-            {
-                countdownTime = 3 - (Time.time - countdownStartTime);
-                countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime + 1));
-            }
-            else if (!go)
-            {
-                go = true;
-                countdownText.gameObject.SetActive(false);
-            }
+            GameTimer();
         }
         else
         {
@@ -117,6 +92,36 @@ public class Car : MonoBehaviour
             rb.velocity = rb.velocity.normalized * maxSpeed;
     }
 
+    void GameTimer()
+    {
+        remainingTime = initialTime - (Time.time - gameStartTime) + bonusTime;
+
+        if (remainingTime < 0)
+        {
+            remainingTime = 0;
+
+            if (!gameOver)
+            {
+                GameObject.Find("UI").GetComponent<ShowPanels>().EndScreen(true);
+                gameOver = true;
+            }
+        }
+
+        timeText.text = "Time: " + Mathf.Ceil(remainingTime);
+
+        // Countdown timer after 0 has been reached - ( GO! )
+        if (countdownTime >= -1)
+        {
+            countdownTime = 3 - (Time.time - countdownStartTime);
+            countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime + 1));
+        }
+        else if (!go)
+        {
+            go = true;
+            countdownText.gameObject.SetActive(false);
+        }
+    }
+
     void DropLetter()
     {
         if (packageCount > 0)
@@ -134,7 +139,8 @@ public class Car : MonoBehaviour
             letter.GetComponent<Letter>().Setup(gameObject, currentPackage);
 
             packageCount--;
-            
+
+            // Get new package info unless none left then display grey circle
             if (packageCount > 0)
                 NewPackage();
             else
@@ -156,6 +162,7 @@ public class Car : MonoBehaviour
             NewPackage();
     }
 
+    // This is for the small icons that indicate how many packages you are carrying
     void SetNextPackageImages()
     {
         if (packageCount == 1)
