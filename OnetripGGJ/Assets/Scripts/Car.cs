@@ -57,6 +57,10 @@ public class Car : MonoBehaviour
 
             // Game timer
             remainingTime = 60 - (Time.time - gameStartTime) + bonusTime;
+
+            if (remainingTime < 0)
+                remainingTime = 0;
+
             timeText.text = "Time: " + Mathf.Ceil(remainingTime);
 
             if (countdownTime >= -1)

@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: aaab416bed5276646a6a10ffb809530c
+timeCreated: 1454160690
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bush01
+    100002: flower01
+    100004: flower010
+    100006: flower02
+    100008: flower03
+    100010: flower04
+    100012: flower05
+    100014: flower06
+    100016: flower07
+    100018: flower08
+    100020: flower09
+    100022: flowerPetals01
+    100024: flowerPetals01 1
+    100026: flowerPetals01 2
+    100028: flowerPetals01 3
+    100030: flowerPetals01 4
+    100032: flowerPetals01 5
+    100034: flowerPetals01 6
+    100036: flowerPetals01 7
+    100038: flowerPetals01 8
+    100040: flowerPetals01 9
+    100042: flowerPollen01
+    100044: flowerPollen01 1
+    100046: flowerPollen01 2
+    100048: flowerPollen01 3
+    100050: flowerPollen01 4
+    100052: flowerPollen01 5
+    100054: flowerPollen01 6
+    100056: flowerPollen01 7
+    100058: flowerPollen01 8
+    100060: flowerPollen01 9
+    100062: //RootNode
+    100064: shrubStem01
+    400000: bush01
+    400002: flower01
+    400004: flower010
+    400006: flower02
+    400008: flower03
+    400010: flower04
+    400012: flower05
+    400014: flower06
+    400016: flower07
+    400018: flower08
+    400020: flower09
+    400022: flowerPetals01
+    400024: flowerPetals01 1
+    400026: flowerPetals01 2
+    400028: flowerPetals01 3
+    400030: flowerPetals01 4
+    400032: flowerPetals01 5
+    400034: flowerPetals01 6
+    400036: flowerPetals01 7
+    400038: flowerPetals01 8
+    400040: flowerPetals01 9
+    400042: flowerPollen01
+    400044: flowerPollen01 1
+    400046: flowerPollen01 2
+    400048: flowerPollen01 3
+    400050: flowerPollen01 4
+    400052: flowerPollen01 5
+    400054: flowerPollen01 6
+    400056: flowerPollen01 7
+    400058: flowerPollen01 8
+    400060: flowerPollen01 9
+    400062: //RootNode
+    400064: shrubStem01
+    2300000: bush01
+    2300002: flowerPetals01
+    2300004: flowerPetals01 1
+    2300006: flowerPetals01 2
+    2300008: flowerPetals01 3
+    2300010: flowerPetals01 4
+    2300012: flowerPetals01 5
+    2300014: flowerPetals01 6
+    2300016: flowerPetals01 7
+    2300018: flowerPetals01 8
+    2300020: flowerPetals01 9
+    2300022: flowerPollen01
+    2300024: flowerPollen01 1
+    2300026: flowerPollen01 2
+    2300028: flowerPollen01 3
+    2300030: flowerPollen01 4
+    2300032: flowerPollen01 5
+    2300034: flowerPollen01 6
+    2300036: flowerPollen01 7
+    2300038: flowerPollen01 8
+    2300040: flowerPollen01 9
+    2300042: shrubStem01
+    3300000: bush01
+    3300002: flowerPetals01
+    3300004: flowerPetals01 1
+    3300006: flowerPetals01 2
+    3300008: flowerPetals01 3
+    3300010: flowerPetals01 4
+    3300012: flowerPetals01 5
+    3300014: flowerPetals01 6
+    3300016: flowerPetals01 7
+    3300018: flowerPetals01 8
+    3300020: flowerPetals01 9
+    3300022: flowerPollen01
+    3300024: flowerPollen01 1
+    3300026: flowerPollen01 2
+    3300028: flowerPollen01 3
+    3300030: flowerPollen01 4
+    3300032: flowerPollen01 5
+    3300034: flowerPollen01 6
+    3300036: flowerPollen01 7
+    3300038: flowerPollen01 8
+    3300040: flowerPollen01 9
+    3300042: shrubStem01
+    4300000: flowerPollen01
+    4300002: flowerPetals01
+    4300004: flowerPollen01
+    4300006: flowerPetals01
+    4300008: flowerPollen01
+    4300010: flowerPetals01
+    4300012: flowerPollen01
+    4300014: flowerPetals01
+    4300016: flowerPollen01
+    4300018: flowerPetals01
+    4300020: flowerPollen01
+    4300022: flowerPetals01
+    4300024: flowerPollen01
+    4300026: flowerPetals01
+    4300028: flowerPollen01
+    4300030: flowerPetals01
+    4300032: flowerPollen01
+    4300034: flowerPetals01
+    4300036: flowerPollen01
+    4300038: flowerPetals01
+    4300040: shrubStem01
+    4300042: bush01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
