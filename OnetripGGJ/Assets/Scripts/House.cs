@@ -3,7 +3,6 @@
 public class House : MonoBehaviour
 {
     public MeshRenderer[] renderers;
-    public Transform packageTypeSpawn;
 
     private HouseStruct houseInfo;
 
@@ -13,8 +12,6 @@ public class House : MonoBehaviour
         houseInfo = new HouseStruct(colour, packageType);
         foreach (MeshRenderer renderer in renderers)
             renderer.material = wallMaterial;
-
-        GameObject.Instantiate(packageTypePrefab, packageTypeSpawn.position, Quaternion.identity);
     }
 
     public HouseStruct HouseInfo

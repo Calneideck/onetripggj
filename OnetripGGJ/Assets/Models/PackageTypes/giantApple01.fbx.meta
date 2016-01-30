@@ -1,33 +1,25 @@
 fileFormatVersion: 2
-guid: dcaad0427e3c3f84daa255ce65b84afa
-timeCreated: 1454075098
+guid: c28e6b7df06fa164ab39dbcc30579edd
+timeCreated: 1454137037
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube1
-    100004: pCylinder2
+    100004: pCube2
     100006: pSphere1
-    100008: pSphere2
-    100010: pSphere3
-    100012: transform2
-    100014: transform3
-    100016: transform4
-    100018: transform5
+    100008: transform1
+    100010: transform2
     400000: //RootNode
     400002: pCube1
-    400004: pCylinder2
+    400004: pCube2
     400006: pSphere1
-    400008: pSphere2
-    400010: pSphere3
-    400012: transform2
-    400014: transform3
-    400016: transform4
-    400018: transform5
-    2300000: pSphere3
-    3300000: pSphere3
-    4300000: pSphere3
+    400008: transform1
+    400010: transform2
+    2300000: pCube2
+    3300000: pCube2
+    4300000: pCube2
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,7 +44,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 35
+    globalScale: 20
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -68,8 +60,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 0
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0

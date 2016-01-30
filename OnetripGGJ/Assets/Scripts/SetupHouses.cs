@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class SetupHouses : MonoBehaviour
 {
     public Transform[] spawnLocations;
+    public Transform[] packageTypeSpawnLocations;
     public GameObject[] housePrefabs;
     public GameObject[] packageTypePrefabs;
     public Material[] wallMaterials;
@@ -35,6 +36,8 @@ public class SetupHouses : MonoBehaviour
             GameObject house = (GameObject)GameObject.Instantiate(housePrefabs[Random.Range(0, housePrefabs.Length)], spawnLocations[i].position, Quaternion.identity);
             house.transform.SetParent(houseHolderObject);
             house.GetComponent<House>().Setup(wallMaterials[(int)houseInfo.colour], houseInfo.colour, packageTypePrefabs[(int)houseInfo.packageType], houseInfo.packageType);
+
+            GameObject.Instantiate(packageTypePrefabs[(int)houseInfo.packageType], packageTypeSpawnLocations[i].position, Quaternion.identity);
         }
 	}
 }
