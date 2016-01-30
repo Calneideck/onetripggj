@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 38de2c96992cc47459186f1135984def
+timeCreated: 1454160855
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chairSeat011
+    100002: chairSeat012
+    100004: chairSeat013
+    100006: chairSeat014
+    100008: chairSeat015
+    100010: chairSeat016
+    100012: chairSeat017
+    100014: chairSeat02
+    100016: chairSeat03
+    100018: chairSeat04
+    100020: chairSeat05
+    100022: chairSeat06
+    100024: chairSeat07
+    100026: chairSeat08
+    100028: //RootNode
+    400000: chairSeat011
+    400002: chairSeat012
+    400004: chairSeat013
+    400006: chairSeat014
+    400008: chairSeat015
+    400010: chairSeat016
+    400012: chairSeat017
+    400014: chairSeat02
+    400016: chairSeat03
+    400018: chairSeat04
+    400020: chairSeat05
+    400022: chairSeat06
+    400024: chairSeat07
+    400026: chairSeat08
+    400028: //RootNode
+    2300000: chairSeat011
+    2300002: chairSeat012
+    2300004: chairSeat013
+    2300006: chairSeat014
+    2300008: chairSeat015
+    2300010: chairSeat016
+    2300012: chairSeat017
+    2300014: chairSeat02
+    2300016: chairSeat03
+    2300018: chairSeat04
+    2300020: chairSeat05
+    2300022: chairSeat06
+    2300024: chairSeat07
+    2300026: chairSeat08
+    3300000: chairSeat011
+    3300002: chairSeat012
+    3300004: chairSeat013
+    3300006: chairSeat014
+    3300008: chairSeat015
+    3300010: chairSeat016
+    3300012: chairSeat017
+    3300014: chairSeat02
+    3300016: chairSeat03
+    3300018: chairSeat04
+    3300020: chairSeat05
+    3300022: chairSeat06
+    3300024: chairSeat07
+    3300026: chairSeat08
+    4300000: chairSeat02
+    4300002: chairSeat03
+    4300004: chairSeat04
+    4300006: chairSeat05
+    4300008: chairSeat07
+    4300010: chairSeat06
+    4300012: chairSeat08
+    4300014: chairSeat013
+    4300016: chairSeat016
+    4300018: chairSeat011
+    4300020: chairSeat012
+    4300022: chairSeat014
+    4300024: chairSeat015
+    4300026: chairSeat017
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
