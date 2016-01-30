@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Car : MonoBehaviour
 {
-    public GameObject letterPrefab;
+    public GameObject[] packagePrefabs;
     public float accel;
     public float maxSpeed;
     public float rotationSpeed;
@@ -54,9 +54,15 @@ public class Car : MonoBehaviour
         if (packageCount > 0)
         {
             // create the letter, giving it a bit of spin and turning triggers off so it collides with the world
-            GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
+            int rnd = Random.Range(0, packagePrefabs.Length);
+            GameObject letter = (GameObject)GameObject.Instantiate(packagePrefabs[rnd], transform.position + Vector3.down * 1.5f, Random.rotation);
             letter.GetComponent<Rigidbody>().AddTorque(Vector3.one, ForceMode.Impulse);
-            letter.GetComponent<BoxCollider>().isTrigger = false;
+
+            if (rnd == 0)
+                letter.transform.Find("Mesh").GetComponent<MeshCollider>().isTrigger = false;
+            else
+                letter.GetComponent<MeshCollider>().isTrigger = false;
+
             letter.GetComponent<Letter>().Setup(gameObject, currentPackage);
 
             packageCount--;
