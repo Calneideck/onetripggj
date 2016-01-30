@@ -36,9 +36,11 @@ public class StartOptions : MonoBehaviour {
 	}
 
 
-	public void StartButtonClicked()
+	public void StartButtonClicked(int sceneToStart)
 	{
-		//If changeMusicOnStart is true, fade out volume of music group of AudioMixer by calling FadeDown function of PlayMusic, using length of fadeColorAnimationClip as time. 
+        this.sceneToStart = sceneToStart;
+        
+        //If changeMusicOnStart is true, fade out volume of music group of AudioMixer by calling FadeDown function of PlayMusic, using length of fadeColorAnimationClip as time. 
 		//To change fade time, change length of animation "FadeToColor"
 		if (changeMusicOnStart) 
 		{

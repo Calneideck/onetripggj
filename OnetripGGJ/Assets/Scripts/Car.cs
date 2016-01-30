@@ -8,18 +8,24 @@ public class Car : MonoBehaviour
     public float accel;
     public float maxSpeed;
     public float rotationSpeed;
+    public float initialTime;
     public Text packageCountText;
     public Text currentPackageText;
     public Text scoreText;
+    public Text timeText;
 
     private Rigidbody rb;
     private int packageCount = 0;
     private HouseStruct currentPackage;
     private int score = 0;
+    private float startTime;
+    private float remainingTime;
+    private float bonusTime;
 
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
+        startTime = Time.time;
 	}
 	
     void Update()
@@ -33,6 +39,9 @@ public class Car : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             DropLetter();
+
+        remainingTime = 60 - (Time.time - startTime) + bonusTime;
+        timeText.text = "Time Remaining: " + Mathf.Ceil(remainingTime);
     }
 
 	void FixedUpdate ()
@@ -95,5 +104,11 @@ public class Car : MonoBehaviour
     {
         score++;
         scoreText.text = "Score: " + score.ToString();
+        bonusTime += 15;
+    }
+
+    public int PackageCount
+    {
+        get { return packageCount; }
     }
 }
