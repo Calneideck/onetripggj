@@ -9,11 +9,17 @@ public class Letter : MonoBehaviour
     private GameObject car;
     private HouseStruct packageInfo;
     private bool delivered = false;
+    private LetterPickup lp;
 
     public void Setup(GameObject car, HouseStruct packageInfo)
     {
         this.car = car;
         this.packageInfo = packageInfo;
+    }
+
+    public void SetLetterPickup(LetterPickup lp)
+    {
+        this.lp = lp;
     }
 
     void OnCollisionEnter(Collision coll)
@@ -32,6 +38,7 @@ public class Letter : MonoBehaviour
         if (coll.tag == "Player")
         {
             coll.GetComponent<Car>().ReceivedLetter();
+            lp.PackagePickedUp();
             Remove();
         }
 
