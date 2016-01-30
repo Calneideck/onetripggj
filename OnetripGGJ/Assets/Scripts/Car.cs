@@ -9,11 +9,12 @@ public class Car : MonoBehaviour
     public float maxSpeed;
     public float rotationSpeed;
     public float initialTime;
-    public Text packageCountText;
     public RawImage currentPackageColourImage;
     public RawImage currentPackageImage;
     public Texture[] colourTextures;
     public Texture[] packageTypeTextures;
+    public Texture greyTexture;
+    public GameObject[] nextPackageImages;
 
     public Text scoreText;
     public Text timeText;
@@ -30,7 +31,10 @@ public class Car : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         startTime = Time.time;
-	}
+
+        currentPackageColourImage.texture = greyTexture;
+        currentPackageImage.gameObject.SetActive(false);
+    }
 	
     void Update()
     {
@@ -45,7 +49,7 @@ public class Car : MonoBehaviour
             DropLetter();
 
         remainingTime = 60 - (Time.time - startTime) + bonusTime;
-        timeText.text = "Time Remaining: " + Mathf.Ceil(remainingTime);
+        timeText.text = "Time: " + Mathf.Ceil(remainingTime);
     }
 
 	void FixedUpdate ()
@@ -79,9 +83,7 @@ public class Car : MonoBehaviour
             letter.GetComponent<Letter>().Setup(gameObject, currentPackage);
 
             packageCount--;
-            packageCountText.text = "Packages: " + packageCount.ToString();
-
-            // If the last package was dropped, display 'No Package'
+            
             if (packageCount > 0)
                 NewPackage();
             else
@@ -89,16 +91,37 @@ public class Car : MonoBehaviour
                 currentPackageColourImage.texture = greyTexture;
                 currentPackageImage.gameObject.SetActive(false);
             }
+
+            SetNextPackageImages();
         }
     }
 
     public void ReceivedLetter()
     {
         packageCount++;
-        packageCountText.text = "Packages: " + packageCount.ToString();
+        SetNextPackageImages();
 
         if (packageCount == 1)
             NewPackage();
+    }
+
+    void SetNextPackageImages()
+    {
+        if (packageCount == 1)
+        {
+            nextPackageImages[0].SetActive(false);
+            nextPackageImages[1].SetActive(false);
+        }
+        else if (packageCount == 2)
+        {
+            nextPackageImages[0].SetActive(true);
+            nextPackageImages[1].SetActive(false);
+        }
+        else if (packageCount == 3)
+        {
+            nextPackageImages[0].SetActive(true);
+            nextPackageImages[1].SetActive(true);
+        }
     }
 
     public void NewPackage()
