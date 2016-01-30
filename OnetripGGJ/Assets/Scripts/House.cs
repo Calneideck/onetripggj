@@ -1,19 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class House : MonoBehaviour
 {
-    private HouseColour colour;
-    private PackageType packageType;
-
-    void Start ()
-    {
-		
-	}
+    private HouseStruct houseInfo;
 
     public void Setup(HouseColour colour, PackageType packageType)
     {
-        this.colour = colour;
-        this.packageType = packageType;
+        houseInfo = new HouseStruct(colour, packageType);
+    }
+
+    public HouseStruct HouseInfo
+    {
+        get { return houseInfo; }
     }
 }
