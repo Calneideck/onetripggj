@@ -7,6 +7,7 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject optionsTint;							//Store a reference to the Game Object OptionsTint 
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
+    public GameObject gameOverPanel;
 
 
 	//Call this function to activate and display the Options panel during the main menu
@@ -49,4 +50,14 @@ public class ShowPanels : MonoBehaviour {
 		optionsTint.SetActive(false);
 
 	}
+
+    public void EndScreen(bool active)
+    {
+        optionsTint.SetActive(active);
+        gameOverPanel.SetActive(active);
+        if (active)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
 }

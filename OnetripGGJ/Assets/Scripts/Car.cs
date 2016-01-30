@@ -9,6 +9,7 @@ public class Car : MonoBehaviour
     public float maxSpeed;
     public float rotationSpeed;
     public float initialTime;
+    public int timeBonus;
     public RawImage currentPackageColourImage;
     public RawImage currentPackageImage;
     public Texture[] colourTextures;
@@ -29,6 +30,8 @@ public class Car : MonoBehaviour
     private float remainingTime;
     private float bonusTime;
     private bool started = false;
+    private bool gameOver = false;
+    private bool go = false;
 
     void Start ()
     {
@@ -38,8 +41,7 @@ public class Car : MonoBehaviour
         currentPackageColourImage.texture = greyTexture;
         currentPackageImage.gameObject.SetActive(false);
 
-        remainingTime = 60 - (Time.time - gameStartTime) + bonusTime;
-        timeText.text = "Time: " + Mathf.Ceil(remainingTime);
+        timeText.text = "Time: " + Mathf.Ceil(initialTime);
     }
 	
     void Update()
@@ -56,13 +58,30 @@ public class Car : MonoBehaviour
                 DropLetter();
 
             // Game timer
-            remainingTime = 60 - (Time.time - gameStartTime) + bonusTime;
+            remainingTime = initialTime - (Time.time - gameStartTime) + bonusTime;
+
+            if (remainingTime < 0)
+            {
+                remainingTime = 0;
+
+                if (!gameOver)
+                {
+                    GameObject.Find("UI").GetComponent<ShowPanels>().EndScreen(true);
+                    gameOver = true;
+                }
+            }
+
             timeText.text = "Time: " + Mathf.Ceil(remainingTime);
 
             if (countdownTime >= -1)
             {
                 countdownTime = 3 - (Time.time - countdownStartTime);
                 countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime + 1));
+            }
+            else if (!go)
+            {
+                go = true;
+                countdownText.gameObject.SetActive(false);
             }
         }
         else
@@ -168,7 +187,7 @@ public class Car : MonoBehaviour
     {
         score += 10;
         scoreText.text = "Score: " + score.ToString();
-        bonusTime += 15;
+        bonusTime += timeBonus;
     }
 
     public int PackageCount

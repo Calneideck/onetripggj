@@ -9271,7 +9271,8 @@ MonoBehaviour:
   accel: 30
   maxSpeed: 50
   rotationSpeed: 100
-  initialTime: 60
+  initialTime: 5
+  timeBonus: 0
   currentPackageColourImage: {fileID: 193116772}
   currentPackageImage: {fileID: 1220069395}
   colourTextures:
