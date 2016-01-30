@@ -20,7 +20,10 @@ public class Letter : MonoBehaviour
     void OnTriggerEnter(Collider coll)
     {
         if (coll.tag == "Player")
+        {
+            coll.GetComponent<Car>().ReceivedLetter();
             Remove();
+        }
     }
 
     void Remove()
