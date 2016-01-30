@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 7d6b0106c41ab4f4d802305a52bd7fd4
+timeCreated: 1454151368
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: dirt1
+    100002: leaf01
+    100004: leaf01 1
+    100006: leaf01 2
+    100008: leaf01 3
+    100010: leaf010
+    100012: leaf010 1
+    100014: leaf010 2
+    100016: leaf010 3
+    100018: leaf02
+    100020: leaf02 1
+    100022: leaf02 2
+    100024: leaf02 3
+    100026: leaf03
+    100028: leaf03 1
+    100030: leaf03 2
+    100032: leaf03 3
+    100034: leaf04
+    100036: leaf04 1
+    100038: leaf04 2
+    100040: leaf04 3
+    100042: leaf05
+    100044: leaf05 1
+    100046: leaf05 2
+    100048: leaf05 3
+    100050: leaf06
+    100052: leaf06 1
+    100054: leaf06 2
+    100056: leaf06 3
+    100058: leaf07
+    100060: leaf07 1
+    100062: leaf07 2
+    100064: leaf07 3
+    100066: leaf08
+    100068: leaf08 1
+    100070: leaf08 2
+    100072: leaf08 3
+    100074: leaf09
+    100076: leaf09 1
+    100078: leaf09 2
+    100080: leaf09 3
+    100082: leafyPlant01
+    100084: leafyPlant02
+    100086: leafyPlant03
+    100088: leafyPlant04
+    100090: planterBoard01
+    100092: planterBoard02
+    100094: planterBoard03
+    100096: planterBoard04
+    100098: planterBoard05
+    100100: planterBoard06
+    100102: planterBoard07
+    100104: planterBoard08
+    100106: //RootNode
+    100108: planterBox01
+    100110: post01
+    100112: post02
+    100114: post03
+    100116: post04
+    100118: stem01
+    100120: stem01 1
+    100122: stem01 2
+    100124: stem01 3
+    400000: dirt1
+    400002: leaf01
+    400004: leaf01 1
+    400006: leaf01 2
+    400008: leaf01 3
+    400010: leaf010
+    400012: leaf010 1
+    400014: leaf010 2
+    400016: leaf010 3
+    400018: leaf02
+    400020: leaf02 1
+    400022: leaf02 2
+    400024: leaf02 3
+    400026: leaf03
+    400028: leaf03 1
+    400030: leaf03 2
+    400032: leaf03 3
+    400034: leaf04
+    400036: leaf04 1
+    400038: leaf04 2
+    400040: leaf04 3
+    400042: leaf05
+    400044: leaf05 1
+    400046: leaf05 2
+    400048: leaf05 3
+    400050: leaf06
+    400052: leaf06 1
+    400054: leaf06 2
+    400056: leaf06 3
+    400058: leaf07
+    400060: leaf07 1
+    400062: leaf07 2
+    400064: leaf07 3
+    400066: leaf08
+    400068: leaf08 1
+    400070: leaf08 2
+    400072: leaf08 3
+    400074: leaf09
+    400076: leaf09 1
+    400078: leaf09 2
+    400080: leaf09 3
+    400082: leafyPlant01
+    400084: leafyPlant02
+    400086: leafyPlant03
+    400088: leafyPlant04
+    400090: planterBoard01
+    400092: planterBoard02
+    400094: planterBoard03
+    400096: planterBoard04
+    400098: planterBoard05
+    400100: planterBoard06
+    400102: planterBoard07
+    400104: planterBoard08
+    400106: //RootNode
+    400108: planterBox01
+    400110: post01
+    400112: post02
+    400114: post03
+    400116: post04
+    400118: stem01
+    400120: stem01 1
+    400122: stem01 2
+    400124: stem01 3
+    2300000: dirt1
+    2300002: leaf01
+    2300004: leaf01 1
+    2300006: leaf01 2
+    2300008: leaf01 3
+    2300010: leaf010
+    2300012: leaf010 1
+    2300014: leaf010 2
+    2300016: leaf010 3
+    2300018: leaf02
+    2300020: leaf02 1
+    2300022: leaf02 2
+    2300024: leaf02 3
+    2300026: leaf03
+    2300028: leaf03 1
+    2300030: leaf03 2
+    2300032: leaf03 3
+    2300034: leaf04
+    2300036: leaf04 1
+    2300038: leaf04 2
+    2300040: leaf04 3
+    2300042: leaf05
+    2300044: leaf05 1
+    2300046: leaf05 2
+    2300048: leaf05 3
+    2300050: leaf06
+    2300052: leaf06 1
+    2300054: leaf06 2
+    2300056: leaf06 3
+    2300058: leaf07
+    2300060: leaf07 1
+    2300062: leaf07 2
+    2300064: leaf07 3
+    2300066: leaf08
+    2300068: leaf08 1
+    2300070: leaf08 2
+    2300072: leaf08 3
+    2300074: leaf09
+    2300076: leaf09 1
+    2300078: leaf09 2
+    2300080: leaf09 3
+    2300082: planterBoard01
+    2300084: planterBoard02
+    2300086: planterBoard03
+    2300088: planterBoard04
+    2300090: planterBoard05
+    2300092: planterBoard06
+    2300094: planterBoard07
+    2300096: planterBoard08
+    2300098: post01
+    2300100: post02
+    2300102: post03
+    2300104: post04
+    2300106: stem01
+    2300108: stem01 1
+    2300110: stem01 2
+    2300112: stem01 3
+    3300000: dirt1
+    3300002: leaf01
+    3300004: leaf01 1
+    3300006: leaf01 2
+    3300008: leaf01 3
+    3300010: leaf010
+    3300012: leaf010 1
+    3300014: leaf010 2
+    3300016: leaf010 3
+    3300018: leaf02
+    3300020: leaf02 1
+    3300022: leaf02 2
+    3300024: leaf02 3
+    3300026: leaf03
+    3300028: leaf03 1
+    3300030: leaf03 2
+    3300032: leaf03 3
+    3300034: leaf04
+    3300036: leaf04 1
+    3300038: leaf04 2
+    3300040: leaf04 3
+    3300042: leaf05
+    3300044: leaf05 1
+    3300046: leaf05 2
+    3300048: leaf05 3
+    3300050: leaf06
+    3300052: leaf06 1
+    3300054: leaf06 2
+    3300056: leaf06 3
+    3300058: leaf07
+    3300060: leaf07 1
+    3300062: leaf07 2
+    3300064: leaf07 3
+    3300066: leaf08
+    3300068: leaf08 1
+    3300070: leaf08 2
+    3300072: leaf08 3
+    3300074: leaf09
+    3300076: leaf09 1
+    3300078: leaf09 2
+    3300080: leaf09 3
+    3300082: planterBoard01
+    3300084: planterBoard02
+    3300086: planterBoard03
+    3300088: planterBoard04
+    3300090: planterBoard05
+    3300092: planterBoard06
+    3300094: planterBoard07
+    3300096: planterBoard08
+    3300098: post01
+    3300100: post02
+    3300102: post03
+    3300104: post04
+    3300106: stem01
+    3300108: stem01 1
+    3300110: stem01 2
+    3300112: stem01 3
+    4300000: stem01
+    4300002: leaf01
+    4300004: leaf02
+    4300006: leaf03
+    4300008: leaf04
+    4300010: leaf05
+    4300012: leaf06
+    4300014: leaf07
+    4300016: leaf08
+    4300018: leaf09
+    4300020: leaf010
+    4300022: stem01
+    4300024: leaf01
+    4300026: leaf02
+    4300028: leaf03
+    4300030: leaf04
+    4300032: leaf05
+    4300034: leaf06
+    4300036: leaf07
+    4300038: leaf08
+    4300040: leaf09
+    4300042: leaf010
+    4300044: stem01
+    4300046: leaf01
+    4300048: leaf02
+    4300050: leaf03
+    4300052: leaf04
+    4300054: leaf05
+    4300056: leaf06
+    4300058: leaf07
+    4300060: leaf08
+    4300062: leaf09
+    4300064: leaf010
+    4300066: stem01
+    4300068: leaf01
+    4300070: leaf02
+    4300072: leaf03
+    4300074: leaf04
+    4300076: leaf05
+    4300078: leaf06
+    4300080: leaf07
+    4300082: leaf08
+    4300084: leaf09
+    4300086: leaf010
+    4300088: planterBoard01
+    4300090: planterBoard02
+    4300092: planterBoard03
+    4300094: planterBoard04
+    4300096: planterBoard05
+    4300098: planterBoard06
+    4300100: planterBoard07
+    4300102: planterBoard08
+    4300104: dirt1
+    4300106: post02
+    4300108: post01
+    4300110: post03
+    4300112: post04
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 150
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

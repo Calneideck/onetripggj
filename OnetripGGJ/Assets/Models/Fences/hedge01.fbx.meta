@@ -1,15 +1,28 @@
 fileFormatVersion: 2
-guid: ad2ee78a1be2e2242911a24a75c7a4dd
+guid: fa7b14561d00a00468ebc03f8e94375c
 timeCreated: 1454147003
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: hedgeBranch02
+    100004: hedgeBranch03
+    100006: hedgeLeaves
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCylinder1
+    400002: hedgeBranch02
+    400004: hedgeBranch03
+    400006: hedgeLeaves
+    2300000: hedgeBranch02
+    2300002: hedgeBranch03
+    2300004: hedgeLeaves
+    3300000: hedgeBranch02
+    3300002: hedgeBranch03
+    3300004: hedgeLeaves
+    4300000: hedgeLeaves
+    4300002: hedgeBranch02
+    4300004: hedgeBranch03
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -34,7 +47,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 150
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -68,7 +81,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

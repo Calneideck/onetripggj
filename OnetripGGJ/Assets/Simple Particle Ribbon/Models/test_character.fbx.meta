@@ -1,46 +1,21 @@
 fileFormatVersion: 2
-guid: e4936dfb51f3c124b8be1c280297df93
-timeCreated: 1454147003
-licenseType: Free
+guid: d5d50f2c96e84754db1083ea5c45e6fb
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: hedgeBranch04
-    100004: hedgeBranch05
-    100006: hedgeBranch06
-    100008: hedgeBranch07
-    100010: hedgeleaves02
     400000: //RootNode
-    400002: hedgeBranch04
-    400004: hedgeBranch05
-    400006: hedgeBranch06
-    400008: hedgeBranch07
-    400010: hedgeleaves02
-    2300000: hedgeBranch04
-    2300002: hedgeBranch05
-    2300004: hedgeBranch06
-    2300006: hedgeBranch07
-    2300008: hedgeleaves02
-    3300000: hedgeBranch04
-    3300002: hedgeBranch05
-    3300004: hedgeBranch06
-    3300006: hedgeBranch07
-    3300008: hedgeleaves02
-    4300000: hedgeleaves02
-    4300002: hedgeBranch07
-    4300004: hedgeBranch06
-    4300006: hedgeBranch05
-    4300008: hedgeBranch04
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Manikin
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -48,9 +23,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: 0.5
-    animationPositionError: 0.5
-    animationScaleError: 0.5
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -71,28 +46,27 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: 0.5
-    foreArmTwist: 0.5
-    upperLegTwist: 0.5
-    legTwist: 0.5
-    armStretch: 0.05
-    legStretch: 0.05
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
-  humanoidOversampling: 1
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
