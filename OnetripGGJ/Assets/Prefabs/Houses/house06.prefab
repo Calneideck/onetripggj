@@ -93,6 +93,7 @@ GameObject:
   - 4: {fileID: 495412}
   - 33: {fileID: 3304324}
   - 23: {fileID: 2352940}
+  - 64: {fileID: 6439412}
   m_Layer: 0
   m_Name: roof012
   m_TagString: Untagged
@@ -327,6 +328,7 @@ GameObject:
   - 4: {fileID: 474658}
   - 33: {fileID: 3313968}
   - 23: {fileID: 2384304}
+  - 64: {fileID: 6485864}
   m_Layer: 0
   m_Name: roof011
   m_TagString: Untagged
@@ -677,6 +679,7 @@ GameObject:
   - 4: {fileID: 413452}
   - 33: {fileID: 3393618}
   - 23: {fileID: 2361554}
+  - 64: {fileID: 6444700}
   m_Layer: 0
   m_Name: roof013
   m_TagString: Untagged
@@ -1663,7 +1666,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.74014, y: 8.504221, z: -9.517471}
+  m_LocalPosition: {x: 117.03589, y: 7.0648556, z: 79.16931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 440006}
@@ -3977,6 +3980,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108710}
   m_Mesh: {fileID: 4300010, guid: 096fb6739b4c4aa44b4be898b72bf061, type: 3}
+--- !u!64 &6439412
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300106, guid: 096fb6739b4c4aa44b4be898b72bf061, type: 3}
+--- !u!64 &6444700
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300108, guid: 096fb6739b4c4aa44b4be898b72bf061, type: 3}
+--- !u!64 &6485864
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300110, guid: 096fb6739b4c4aa44b4be898b72bf061, type: 3}
 --- !u!95 &9510654
 Animator:
   serializedVersion: 3

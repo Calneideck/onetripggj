@@ -854,6 +854,7 @@ GameObject:
   - 4: {fileID: 421538}
   - 33: {fileID: 3375600}
   - 23: {fileID: 2398046}
+  - 64: {fileID: 6446330}
   m_Layer: 0
   m_Name: roof07
   m_TagString: Untagged
@@ -1483,6 +1484,7 @@ GameObject:
   - 4: {fileID: 414792}
   - 33: {fileID: 3330316}
   - 23: {fileID: 2373544}
+  - 64: {fileID: 6497926}
   m_Layer: 0
   m_Name: roof08
   m_TagString: Untagged
@@ -2308,7 +2310,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.169403, y: 8.541349, z: 11.2378235}
+  m_LocalPosition: {x: 116.43997, y: 7.0648556, z: 79.43932}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462204}
@@ -5272,6 +5274,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119056}
   m_Mesh: {fileID: 4300116, guid: 560b10aaf2878294e8cc655344625a33, type: 3}
+--- !u!64 &6446330
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300128, guid: 560b10aaf2878294e8cc655344625a33, type: 3}
+--- !u!64 &6497926
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300130, guid: 560b10aaf2878294e8cc655344625a33, type: 3}
 --- !u!95 &9528246
 Animator:
   serializedVersion: 3

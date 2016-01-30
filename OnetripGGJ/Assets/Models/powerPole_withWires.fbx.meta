@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 7be6ac9857d0772469878954a09e6de9
+timeCreated: 1454134754
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pCube40
+    100002: pCube41
+    100004: pCube42
+    100006: pCube43
+    100008: pCube50
+    100010: pCube51
+    100012: pCube53
+    100014: pCube54
+    100016: pCube55
+    100018: powerLine01
+    100020: powerLine02
+    100022: powerLine03
+    100024: powerLine04
+    100026: powerLine05
+    100028: powerLine06
+    100030: powerPole01
+    100032: //RootNode
+    100034: powerWires
+    100036: powerWires1
+    100038: powerWires2
+    100040: powerWires3
+    400000: pCube40
+    400002: pCube41
+    400004: pCube42
+    400006: pCube43
+    400008: pCube50
+    400010: pCube51
+    400012: pCube53
+    400014: pCube54
+    400016: pCube55
+    400018: powerLine01
+    400020: powerLine02
+    400022: powerLine03
+    400024: powerLine04
+    400026: powerLine05
+    400028: powerLine06
+    400030: powerPole01
+    400032: //RootNode
+    400034: powerWires
+    400036: powerWires1
+    400038: powerWires2
+    400040: powerWires3
+    2300000: pCube40
+    2300002: pCube41
+    2300004: pCube42
+    2300006: pCube43
+    2300008: pCube50
+    2300010: pCube51
+    2300012: pCube53
+    2300014: pCube54
+    2300016: pCube55
+    2300018: powerLine01
+    2300020: powerLine02
+    2300022: powerLine03
+    2300024: powerLine04
+    2300026: powerLine05
+    2300028: powerLine06
+    2300030: powerWires
+    2300032: powerWires1
+    2300034: powerWires2
+    2300036: powerWires3
+    3300000: pCube40
+    3300002: pCube41
+    3300004: pCube42
+    3300006: pCube43
+    3300008: pCube50
+    3300010: pCube51
+    3300012: pCube53
+    3300014: pCube54
+    3300016: pCube55
+    3300018: powerLine01
+    3300020: powerLine02
+    3300022: powerLine03
+    3300024: powerLine04
+    3300026: powerLine05
+    3300028: powerLine06
+    3300030: powerWires
+    3300032: powerWires1
+    3300034: powerWires2
+    3300036: powerWires3
+    4300000: powerLine01
+    4300002: powerLine02
+    4300004: powerLine03
+    4300006: powerLine04
+    4300008: powerLine05
+    4300010: powerLine06
+    4300012: pCube42
+    4300014: pCube43
+    4300016: pCube40
+    4300018: pCube50
+    4300020: pCube51
+    4300022: pCube41
+    4300024: pCube53
+    4300026: pCube54
+    4300028: pCube55
+    4300030: powerWires
+    4300032: powerWires1
+    4300034: powerWires2
+    4300036: powerWires3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

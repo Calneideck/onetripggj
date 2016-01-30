@@ -1,11 +1,11 @@
 ﻿public enum PackageType
 {
-    TREE,
+    BIKE,
     LAMP,
     CAR,
     KENNEL,
-    TRAMPOLINE,
+    APPLE,
     POOL,
-    VEGE_PATCH,
+    TRAMPOLINE,
     BBQ
 };
