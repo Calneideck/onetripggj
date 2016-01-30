@@ -15,7 +15,7 @@ public class Car : MonoBehaviour
     public Texture[] packageTypeTextures;
     public Texture greyTexture;
     public GameObject[] nextPackageImages;
-
+    public Text countdownText;
     public Text scoreText;
     public Text timeText;
 
@@ -23,37 +23,69 @@ public class Car : MonoBehaviour
     private int packageCount = 0;
     private HouseStruct currentPackage;
     private int score = 0;
-    private float startTime;
+    private float gameStartTime;
+    private float countdownStartTime;
+    private float countdownTime;
     private float remainingTime;
     private float bonusTime;
+    private bool started = false;
 
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
-        startTime = Time.time;
+        countdownStartTime = Time.time;
 
         currentPackageColourImage.texture = greyTexture;
         currentPackageImage.gameObject.SetActive(false);
+
+        remainingTime = 60 - (Time.time - gameStartTime) + bonusTime;
+        timeText.text = "Time: " + Mathf.Ceil(remainingTime);
     }
 	
     void Update()
     {
-        // Steering
+        if (started)
+        {
+            // Steering
+            if (Input.GetKey(KeyCode.A))
+                transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.D))
+                transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.A))
-            transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.D))
-            transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
+            if (Input.GetKeyDown(KeyCode.Space))
+                DropLetter();
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            DropLetter();
+            // Game timer
+            remainingTime = 60 - (Time.time - gameStartTime) + bonusTime;
+            timeText.text = "Time: " + Mathf.Ceil(remainingTime);
 
-        remainingTime = 60 - (Time.time - startTime) + bonusTime;
-        timeText.text = "Time: " + Mathf.Ceil(remainingTime);
+            if (countdownTime >= -1)
+            {
+                countdownTime = 3 - (Time.time - countdownStartTime);
+                countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime + 1));
+            }
+        }
+        else
+        {
+            // Countdown timer
+            countdownTime = 3 - (Time.time - countdownStartTime);
+            countdownText.text = Mathf.Ceil(countdownTime).ToString();
+            countdownText.fontSize = Mathf.RoundToInt(200 * (countdownTime - Mathf.Floor(countdownTime)));
+
+            if (countdownTime <= 0)
+            {
+                started = true;
+                countdownText.text = "Go!";
+                gameStartTime = Time.time;
+            }
+        }
     }
 
 	void FixedUpdate ()
     {
+        if (!started)
+            return;
+
         // Forward and reverse movement
 
         if (Input.GetKey(KeyCode.W))
