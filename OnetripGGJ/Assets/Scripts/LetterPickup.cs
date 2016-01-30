@@ -54,7 +54,7 @@ public class LetterPickup : MonoBehaviour
         // Create the letter and give it a random direction to fly in initially 
         GameObject package = (GameObject)GameObject.Instantiate(packagePrefabs[Random.Range(0, packagePrefabs.Length)], spawnPos + Vector3.up, Random.rotation);
         package.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-10, 10), packageLaunchForce, Random.Range(-10, 10)));
-        package.GetComponent<Letter>().SetLetterPickup(this);
+        package.GetComponent<Letter>().SetLetterPickup(car, this);
         package.GetComponent<LetterFlyToCar>().enabled = true;
         package.GetComponent<LetterFlyToCar>().SetCar(car);
         packagesInAir++;
