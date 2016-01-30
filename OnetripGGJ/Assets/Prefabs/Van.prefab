@@ -994,7 +994,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103854}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000017881393}
-  m_LocalPosition: {x: 85.93, y: 20, z: 115.1}
+  m_LocalPosition: {x: 85.93, y: 20, z: 126.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466838}
@@ -1715,7 +1715,7 @@ HingeJoint:
   m_Anchor: {x: -1.24, y: 1.38, z: -0.75}
   m_Axis: {x: 1, y: 90, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.426743, y: 0.11000061, z: -1.2766799}
+  m_ConnectedAnchor: {x: 0.426743, y: 0.11000061, z: -1.2766722}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1799,9 +1799,14 @@ MonoBehaviour:
   accel: 30
   maxSpeed: 50
   rotationSpeed: 100
+  initialTime: 0
   packageCountText: {fileID: 0}
-  currentPackageText: {fileID: 0}
+  currentPackageColourImage: {fileID: 0}
+  currentPackageImage: {fileID: 0}
+  colourTextures: []
+  packageTypeTextures: []
   scoreText: {fileID: 0}
+  timeText: {fileID: 0}
 --- !u!198 &19809466
 ParticleSystem:
   m_ObjectHideFlags: 1

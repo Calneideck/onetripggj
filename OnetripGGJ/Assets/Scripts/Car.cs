@@ -10,7 +10,11 @@ public class Car : MonoBehaviour
     public float rotationSpeed;
     public float initialTime;
     public Text packageCountText;
-    public Text currentPackageText;
+    public RawImage currentPackageColourImage;
+    public RawImage currentPackageImage;
+    public Texture[] colourTextures;
+    public Texture[] packageTypeTextures;
+
     public Text scoreText;
     public Text timeText;
 
@@ -81,7 +85,10 @@ public class Car : MonoBehaviour
             if (packageCount > 0)
                 NewPackage();
             else
-                currentPackageText.text = "No Package";
+            {
+                currentPackageColourImage.texture = greyTexture;
+                currentPackageImage.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -97,12 +104,14 @@ public class Car : MonoBehaviour
     public void NewPackage()
     {
         currentPackage = new HouseStruct(true);
-        currentPackageText.text = currentPackage.colour.ToString() + " - " + currentPackage.packageType.ToString();
+        currentPackageColourImage.texture = colourTextures[(int)currentPackage.colour];
+        currentPackageImage.gameObject.SetActive(true);
+        currentPackageImage.texture = packageTypeTextures[(int)currentPackage.packageType];
     }
 
     public void PackageDelivered()
     {
-        score++;
+        score += 10;
         scoreText.text = "Score: " + score.ToString();
         bonusTime += 15;
     }
