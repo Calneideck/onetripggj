@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LetterPickup : MonoBehaviour
 {
-    public GameObject letterPrefab;
+    public GameObject[] packagePrefabs;
     public float pickupInterval;
     public float letterLaunchForce;
     public Transform car;
@@ -46,7 +46,7 @@ public class LetterPickup : MonoBehaviour
     void SpawnLetter()
     {
         // Create the letter and give it a random direction to fly in initially 
-        GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, spawnPos + Vector3.up, Random.rotation);
+        GameObject letter = (GameObject)GameObject.Instantiate(packagePrefabs[Random.Range(0, packagePrefabs.Length)], spawnPos + Vector3.up, Random.rotation);
         letter.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-10, 10), letterLaunchForce, Random.Range(-10, 10)));
         letter.GetComponent<LetterFlyToCar>().enabled = true;
         letter.GetComponent<LetterFlyToCar>().SetCar(car);

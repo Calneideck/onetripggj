@@ -15699,7 +15699,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e9c55a681b43d459f103275e84daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPrefab: {fileID: 170478, guid: 83927e60ad291a3419caefa6845a794f, type: 2}
+  packagePrefabs:
+  - {fileID: 111680, guid: 6b58d7fe6949e0a48bbc5672f2696760, type: 2}
+  - {fileID: 104610, guid: c0616d75650b5eb44bcaafe1ab7976a0, type: 2}
+  - {fileID: 108424, guid: 84f7d4e6327263a47b1df8eb07f724fd, type: 2}
   accel: 30
   maxSpeed: 50
   rotationSpeed: 100
@@ -16539,7 +16542,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea06bd4da0edb842aa3511a8d1d24bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPrefab: {fileID: 170478, guid: 83927e60ad291a3419caefa6845a794f, type: 2}
+  packagePrefabs:
+  - {fileID: 111680, guid: 6b58d7fe6949e0a48bbc5672f2696760, type: 2}
+  - {fileID: 104610, guid: c0616d75650b5eb44bcaafe1ab7976a0, type: 2}
+  - {fileID: 108424, guid: 84f7d4e6327263a47b1df8eb07f724fd, type: 2}
   pickupInterval: 0.4
   letterLaunchForce: 500
   car: {fileID: 1565217804}

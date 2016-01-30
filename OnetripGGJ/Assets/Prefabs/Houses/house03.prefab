@@ -687,9 +687,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 426026}
   - 114: {fileID: 11464966}
+  - 65: {fileID: 6595926}
   m_Layer: 0
   m_Name: house03
-  m_TagString: Untagged
+  m_TagString: House
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1031,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.287415, y: 7.0648556, z: 79.756805}
+  m_LocalPosition: {x: 111.18158, y: 8.3, z: 42.772934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484798}
@@ -2568,6 +2569,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300064, guid: 75a5cb6300047454ab1546534c26ea82, type: 3}
+--- !u!65 &6595926
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 4.5, z: 7.1}
+  m_Center: {x: 0, y: 0.42, z: 0}
 --- !u!95 &9560022
 Animator:
   serializedVersion: 3
@@ -2604,7 +2617,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: House
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179600}

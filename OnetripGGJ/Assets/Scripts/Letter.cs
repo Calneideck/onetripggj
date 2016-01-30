@@ -18,19 +18,6 @@ public class Letter : MonoBehaviour
 
     void OnCollisionEnter(Collision coll)
     {
-        // If the letter hits the right house, increase the score
-        if (coll.collider.tag == "House")
-        {
-            if (packageInfo == coll.collider.GetComponent<House>().HouseInfo)
-            {
-                if (!delivered)
-                {
-                    car.GetComponent<Car>().PackageDelivered();
-                    delivered = true;
-                }
-            }
-        }
-        
         // wait for 'removetime' seconds before removing the letter when it collides with the world
         if (!removing)
         {
@@ -46,6 +33,19 @@ public class Letter : MonoBehaviour
         {
             coll.GetComponent<Car>().ReceivedLetter();
             Remove();
+        }
+
+        // If the letter hits the right house, increase the score
+        if (coll.tag == "House")
+        {
+            if (packageInfo == coll.GetComponent<House>().HouseInfo)
+            {
+                if (!delivered)
+                {
+                    car.GetComponent<Car>().PackageDelivered();
+                    delivered = true;
+                }
+            }
         }
     }
 
