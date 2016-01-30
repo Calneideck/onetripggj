@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 27af07602698f874ba0c39b1802e5238
+timeCreated: 1454125267
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: door14
+    100002: door14 1
+    100004: door14 2
+    100006: door14 3
+    100008: door14 4
+    100010: door14 5
+    100012: door17
+    100014: door17 1
+    100016: door17 2
+    100018: door17 3
+    100020: door17 4
+    100022: door5
+    100024: door5 1
+    100026: door5 2
+    100028: door5 3
+    100030: door5 4
+    100032: door5 5
+    100034: door9
+    100036: door9 1
+    100038: door9 2
+    100040: door9 3
+    100042: door9 4
+    100044: doorCentre
+    100046: doorCentre 1
+    100048: doorFrame
+    100050: doorFrame 1
+    100052: doorKnob
+    100054: doorKnob 1
+    100056: fullDoor010
+    100058: fullDoor09
+    100060: //RootNode
+    100062: house05 1
+    100064: longWindow021
+    100066: longWindow022
+    100068: longWindow023
+    100070: longWindow024
+    100072: longWindow025
+    100074: pPlane1
+    100076: pPlane1 1
+    100078: pPlane1 2
+    100080: pPlane1 3
+    100082: pPlane1 4
+    100084: pPlane1 5
+    100086: pPlane2
+    100088: pPlane2 1
+    100090: pPlane2 2
+    100092: pPlane2 3
+    100094: pPlane2 4
+    100096: roof010
+    100098: roof09
+    100100: smallWindow028
+    100102: smallWindow029
+    100104: smallWindow030
+    100106: smallWindow031
+    100108: smallWindow032
+    100110: smallWindow033
+    100112: step
+    100114: step 1
+    400000: door14
+    400002: door14 1
+    400004: door14 2
+    400006: door14 3
+    400008: door14 4
+    400010: door14 5
+    400012: door17
+    400014: door17 1
+    400016: door17 2
+    400018: door17 3
+    400020: door17 4
+    400022: door5
+    400024: door5 1
+    400026: door5 2
+    400028: door5 3
+    400030: door5 4
+    400032: door5 5
+    400034: door9
+    400036: door9 1
+    400038: door9 2
+    400040: door9 3
+    400042: door9 4
+    400044: doorCentre
+    400046: doorCentre 1
+    400048: doorFrame
+    400050: doorFrame 1
+    400052: doorKnob
+    400054: doorKnob 1
+    400056: fullDoor010
+    400058: fullDoor09
+    400060: //RootNode
+    400062: house05 1
+    400064: longWindow021
+    400066: longWindow022
+    400068: longWindow023
+    400070: longWindow024
+    400072: longWindow025
+    400074: pPlane1
+    400076: pPlane1 1
+    400078: pPlane1 2
+    400080: pPlane1 3
+    400082: pPlane1 4
+    400084: pPlane1 5
+    400086: pPlane2
+    400088: pPlane2 1
+    400090: pPlane2 2
+    400092: pPlane2 3
+    400094: pPlane2 4
+    400096: roof010
+    400098: roof09
+    400100: smallWindow028
+    400102: smallWindow029
+    400104: smallWindow030
+    400106: smallWindow031
+    400108: smallWindow032
+    400110: smallWindow033
+    400112: step
+    400114: step 1
+    2300000: door14
+    2300002: door14 1
+    2300004: door14 2
+    2300006: door14 3
+    2300008: door14 4
+    2300010: door14 5
+    2300012: door17
+    2300014: door17 1
+    2300016: door17 2
+    2300018: door17 3
+    2300020: door17 4
+    2300022: door5
+    2300024: door5 1
+    2300026: door5 2
+    2300028: door5 3
+    2300030: door5 4
+    2300032: door5 5
+    2300034: door9
+    2300036: door9 1
+    2300038: door9 2
+    2300040: door9 3
+    2300042: door9 4
+    2300044: doorCentre
+    2300046: doorCentre 1
+    2300048: doorFrame
+    2300050: doorFrame 1
+    2300052: doorKnob
+    2300054: doorKnob 1
+    2300056: house05 1
+    2300058: pPlane1
+    2300060: pPlane1 1
+    2300062: pPlane1 2
+    2300064: pPlane1 3
+    2300066: pPlane1 4
+    2300068: pPlane1 5
+    2300070: pPlane2
+    2300072: pPlane2 1
+    2300074: pPlane2 2
+    2300076: pPlane2 3
+    2300078: pPlane2 4
+    2300080: roof010
+    2300082: roof09
+    2300084: step
+    2300086: step 1
+    3300000: door14
+    3300002: door14 1
+    3300004: door14 2
+    3300006: door14 3
+    3300008: door14 4
+    3300010: door14 5
+    3300012: door17
+    3300014: door17 1
+    3300016: door17 2
+    3300018: door17 3
+    3300020: door17 4
+    3300022: door5
+    3300024: door5 1
+    3300026: door5 2
+    3300028: door5 3
+    3300030: door5 4
+    3300032: door5 5
+    3300034: door9
+    3300036: door9 1
+    3300038: door9 2
+    3300040: door9 3
+    3300042: door9 4
+    3300044: doorCentre
+    3300046: doorCentre 1
+    3300048: doorFrame
+    3300050: doorFrame 1
+    3300052: doorKnob
+    3300054: doorKnob 1
+    3300056: house05 1
+    3300058: pPlane1
+    3300060: pPlane1 1
+    3300062: pPlane1 2
+    3300064: pPlane1 3
+    3300066: pPlane1 4
+    3300068: pPlane1 5
+    3300070: pPlane2
+    3300072: pPlane2 1
+    3300074: pPlane2 2
+    3300076: pPlane2 3
+    3300078: pPlane2 4
+    3300080: roof010
+    3300082: roof09
+    3300084: step
+    3300086: step 1
+    4300000: door9
+    4300002: door17
+    4300004: pPlane2
+    4300006: door5
+    4300008: door14
+    4300010: pPlane1
+    4300012: door5
+    4300014: door14
+    4300016: pPlane1
+    4300018: step
+    4300020: doorCentre
+    4300022: doorKnob
+    4300024: doorFrame
+    4300026: door5
+    4300028: door14
+    4300030: pPlane1
+    4300032: door5
+    4300034: door14
+    4300036: pPlane1
+    4300038: door9
+    4300040: door17
+    4300042: pPlane2
+    4300044: door9
+    4300046: door17
+    4300048: pPlane2
+    4300050: door9
+    4300052: door17
+    4300054: pPlane2
+    4300056: door5
+    4300058: door14
+    4300060: pPlane1
+    4300062: door5
+    4300064: door14
+    4300066: pPlane1
+    4300068: door9
+    4300070: door17
+    4300072: pPlane2
+    4300074: step
+    4300076: doorCentre
+    4300078: doorKnob
+    4300080: doorFrame
+    4300082: roof010
+    4300084: roof09
+    4300086: house05
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

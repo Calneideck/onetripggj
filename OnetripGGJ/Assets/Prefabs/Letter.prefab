@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea8f5c7c3ac716448b12fc718387d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  removeTime: 2
+  removeTime: 5
 --- !u!114 &11488122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,8 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64873a2e626a2864bad3063298ae7710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingTime: 10
-  flySpeed: 5
+  flySpeed: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -127,7 +126,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: removeTime
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
@@ -147,7 +146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: flySpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
