@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removeTime: 5
+  whoosh: {fileID: 8300000, guid: 890612b21d5e681488f93b679364764b, type: 3}
 --- !u!114 &11494336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +131,10 @@ Prefab:
       propertyPath: flySpeed
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: whoosh
+      value: 
+      objectReference: {fileID: 8300000, guid: 890612b21d5e681488f93b679364764b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108424}

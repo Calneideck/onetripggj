@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removeTime: 5
+  whoosh: {fileID: 8300000, guid: 573dd833adbe8ce46aa3c5b7dd8a8505, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -127,9 +128,17 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: whooshes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: flySpeed
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: whoosh
+      value: 
+      objectReference: {fileID: 8300000, guid: 573dd833adbe8ce46aa3c5b7dd8a8505, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104610}

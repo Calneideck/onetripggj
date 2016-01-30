@@ -4,12 +4,14 @@ using System.Collections;
 public class Letter : MonoBehaviour
 {
     public float removeTime;
+    public AudioClip whoosh;
 
     private bool removing = false;
     private GameObject car;
     private HouseStruct packageInfo;
     private bool delivered = false;
     private LetterPickup lp;
+    private AudioSource audioSource;
 
     public void Setup(GameObject car, HouseStruct packageInfo)
     {
@@ -17,9 +19,10 @@ public class Letter : MonoBehaviour
         this.packageInfo = packageInfo;
     }
 
-    public void SetLetterPickup(LetterPickup lp)
+    public void SetLetterPickup(Transform car, LetterPickup lp)
     {
         this.lp = lp;
+        audioSource = car.Find("Audio Source").GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter(Collision coll)
@@ -39,6 +42,8 @@ public class Letter : MonoBehaviour
         {
             coll.GetComponent<Car>().ReceivedLetter();
             lp.PackagePickedUp();
+            audioSource.clip = whoosh;
+            audioSource.Play();
             Remove();
         }
 
