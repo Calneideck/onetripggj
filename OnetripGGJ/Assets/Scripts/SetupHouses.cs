@@ -7,6 +7,7 @@ public class SetupHouses : MonoBehaviour
 {
     public Transform[] spawnLocations;
     public GameObject[] housePrefabs;
+    public Material[] wallMaterials;
     public Transform houseHolderObject;
 
     private List<HouseStruct> houses = new List<HouseStruct>();
@@ -30,11 +31,12 @@ public class SetupHouses : MonoBehaviour
         for (int i = 0; i < spawnLocations.Length; i++)
         {
             HouseStruct houseInfo = houses[i];
-
-            GameObject house = (GameObject)GameObject.Instantiate(housePrefabs[(int)houseInfo.colour], spawnLocations[i].position, Quaternion.identity);
+            GameObject house = (GameObject)GameObject.Instantiate(housePrefabs[Random.Range(0, housePrefabs.Length)], spawnLocations[i].position, Quaternion.identity);
             house.transform.SetParent(houseHolderObject);
-            house.GetComponent<House>().Setup(houseInfo.colour, houseInfo.packageType);
-            house.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = houseInfo.packageType.ToString();
+            house.GetComponent<House>().Setup(wallMaterials[(int)houseInfo.colour], houseInfo.colour, houseInfo.packageType);
+
+            // Remove for release!!
+            //house.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = houseInfo.packageType.ToString();
         }
 	}
 }
