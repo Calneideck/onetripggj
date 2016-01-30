@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 3e37fad1751ac9643a3aec34fdec9ff8
+timeCreated: 1454138611
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: depotBase
+    100002: depotBox
+    100004: depotDoor_01
+    100006: depotDoor_02
+    100008: depotDoor_back
+    100010: depotEdging
+    100012: depotHandle01
+    100014: depotHandle02
+    100016: depotHinges
+    100018: depotHole
+    100020: depotRoof
+    100022: depotSign
+    100024: depotSlab
+    100026: depotUpper
+    100028: depotWindow010
+    100030: depotWindow011
+    100032: depotWindow012
+    100034: depotWindow02
+    100036: depotWindow03
+    100038: depotWindow04
+    100040: depotWindow05
+    100042: depotWindow06
+    100044: depotWindow07
+    100046: depotWindow08
+    100048: depotWindow09
+    100050: door18
+    100052: door18 1
+    100054: door18 2
+    100056: door18 3
+    100058: door19
+    100060: door19 1
+    100062: door19 2
+    100064: door19 3
+    100066: door9
+    100068: door9 1
+    100070: door9 10
+    100072: door9 2
+    100074: door9 3
+    100076: door9 4
+    100078: door9 5
+    100080: door9 6
+    100082: door9 7
+    100084: door9 8
+    100086: door9 9
+    100088: house019
+    100090: house023
+    100092: //RootNode
+    100094: pPlane2
+    100096: pPlane2 1
+    100098: pPlane2 10
+    100100: pPlane2 2
+    100102: pPlane2 3
+    100104: pPlane2 4
+    100106: pPlane2 5
+    100108: pPlane2 6
+    100110: pPlane2 7
+    100112: pPlane2 8
+    100114: pPlane2 9
+    400000: depotBase
+    400002: depotBox
+    400004: depotDoor_01
+    400006: depotDoor_02
+    400008: depotDoor_back
+    400010: depotEdging
+    400012: depotHandle01
+    400014: depotHandle02
+    400016: depotHinges
+    400018: depotHole
+    400020: depotRoof
+    400022: depotSign
+    400024: depotSlab
+    400026: depotUpper
+    400028: depotWindow010
+    400030: depotWindow011
+    400032: depotWindow012
+    400034: depotWindow02
+    400036: depotWindow03
+    400038: depotWindow04
+    400040: depotWindow05
+    400042: depotWindow06
+    400044: depotWindow07
+    400046: depotWindow08
+    400048: depotWindow09
+    400050: door18
+    400052: door18 1
+    400054: door18 2
+    400056: door18 3
+    400058: door19
+    400060: door19 1
+    400062: door19 2
+    400064: door19 3
+    400066: door9
+    400068: door9 1
+    400070: door9 10
+    400072: door9 2
+    400074: door9 3
+    400076: door9 4
+    400078: door9 5
+    400080: door9 6
+    400082: door9 7
+    400084: door9 8
+    400086: door9 9
+    400088: house019
+    400090: house023
+    400092: //RootNode
+    400094: pPlane2
+    400096: pPlane2 1
+    400098: pPlane2 10
+    400100: pPlane2 2
+    400102: pPlane2 3
+    400104: pPlane2 4
+    400106: pPlane2 5
+    400108: pPlane2 6
+    400110: pPlane2 7
+    400112: pPlane2 8
+    400114: pPlane2 9
+    2300000: depotBase
+    2300002: depotBox
+    2300004: depotDoor_01
+    2300006: depotDoor_02
+    2300008: depotDoor_back
+    2300010: depotEdging
+    2300012: depotHandle01
+    2300014: depotHandle02
+    2300016: depotHinges
+    2300018: depotHole
+    2300020: depotRoof
+    2300022: depotSign
+    2300024: depotSlab
+    2300026: depotUpper
+    2300028: door18
+    2300030: door18 1
+    2300032: door18 2
+    2300034: door18 3
+    2300036: door19
+    2300038: door19 1
+    2300040: door19 2
+    2300042: door19 3
+    2300044: door9
+    2300046: door9 1
+    2300048: door9 10
+    2300050: door9 2
+    2300052: door9 3
+    2300054: door9 4
+    2300056: door9 5
+    2300058: door9 6
+    2300060: door9 7
+    2300062: door9 8
+    2300064: door9 9
+    2300066: house019
+    2300068: house023
+    2300070: pPlane2
+    2300072: pPlane2 1
+    2300074: pPlane2 10
+    2300076: pPlane2 2
+    2300078: pPlane2 3
+    2300080: pPlane2 4
+    2300082: pPlane2 5
+    2300084: pPlane2 6
+    2300086: pPlane2 7
+    2300088: pPlane2 8
+    2300090: pPlane2 9
+    3300000: depotBase
+    3300002: depotBox
+    3300004: depotDoor_01
+    3300006: depotDoor_02
+    3300008: depotDoor_back
+    3300010: depotEdging
+    3300012: depotHandle01
+    3300014: depotHandle02
+    3300016: depotHinges
+    3300018: depotHole
+    3300020: depotRoof
+    3300022: depotSign
+    3300024: depotSlab
+    3300026: depotUpper
+    3300028: door18
+    3300030: door18 1
+    3300032: door18 2
+    3300034: door18 3
+    3300036: door19
+    3300038: door19 1
+    3300040: door19 2
+    3300042: door19 3
+    3300044: door9
+    3300046: door9 1
+    3300048: door9 10
+    3300050: door9 2
+    3300052: door9 3
+    3300054: door9 4
+    3300056: door9 5
+    3300058: door9 6
+    3300060: door9 7
+    3300062: door9 8
+    3300064: door9 9
+    3300066: house019
+    3300068: house023
+    3300070: pPlane2
+    3300072: pPlane2 1
+    3300074: pPlane2 10
+    3300076: pPlane2 2
+    3300078: pPlane2 3
+    3300080: pPlane2 4
+    3300082: pPlane2 5
+    3300084: pPlane2 6
+    3300086: pPlane2 7
+    3300088: pPlane2 8
+    3300090: pPlane2 9
+    4300000: house023
+    4300002: house019
+    4300004: depotRoof
+    4300006: depotEdging
+    4300008: depotUpper
+    4300010: depotBase
+    4300012: depotHinges
+    4300014: depotHandle01
+    4300016: depotHandle02
+    4300018: depotHole
+    4300020: depotSign
+    4300022: depotDoor_back
+    4300024: depotDoor_01
+    4300026: depotDoor_02
+    4300028: depotSlab
+    4300030: depotBox
+    4300032: door9
+    4300034: pPlane2
+    4300036: door9
+    4300038: pPlane2
+    4300040: door9
+    4300042: pPlane2
+    4300044: door19
+    4300046: door9
+    4300048: pPlane2
+    4300050: door18
+    4300052: door9
+    4300054: pPlane2
+    4300056: door9
+    4300058: pPlane2
+    4300060: door19
+    4300062: door9
+    4300064: pPlane2
+    4300066: door18
+    4300068: door9
+    4300070: pPlane2
+    4300072: door19
+    4300074: door9
+    4300076: pPlane2
+    4300078: door18
+    4300080: door9
+    4300082: pPlane2
+    4300084: door19
+    4300086: door9
+    4300088: pPlane2
+    4300090: door18
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
