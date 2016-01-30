@@ -15,7 +15,7 @@ public class SetupHouses : MonoBehaviour
     public Transform packageTypeHolderObject;
 
     private List<HouseStruct> houses = new List<HouseStruct>();
-    private float[] heightOffsets = new float[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, };
+    private float[] heightOffsets = new float[] { 1.89f, 1.2f, 1.34f, 2.1f, 1, 1.8f, 1.3f, 1.3f };
 
     void Start ()
     {
@@ -41,7 +41,9 @@ public class SetupHouses : MonoBehaviour
             house.GetComponent<House>().Setup(wallMaterials[(int)houseInfo.colour], houseInfo.colour, packageTypePrefabs[(int)houseInfo.packageType], houseInfo.packageType);
 
             // Create the package type object
-            GameObject.Instantiate(packageTypePrefabs[(int)houseInfo.packageType], packageTypeSpawnLocations[i].position + Vector3.up * heightOffsets[(int)houseInfo.packageType], Quaternion.identity);
+            GameObject packageType = (GameObject)GameObject.Instantiate(packageTypePrefabs[(int)houseInfo.packageType], packageTypeSpawnLocations[i].position, Quaternion.identity);
+            packageType.transform.SetParent(packageTypeHolderObject, true);
+            packageType.transform.localPosition = new Vector3(packageType.transform.localPosition.x, heightOffsets[(int)houseInfo.packageType], packageType.transform.localPosition.z);
         }
 	}
 }

@@ -10,10 +10,12 @@ public class LetterPickup : MonoBehaviour
 
     private float lastPickupTime;
     private bool inPickupZone = false;
+    private Vector3 spawnPos;
 
     void Start ()
     {
         lastPickupTime = Time.time;
+        spawnPos = transform.Find("LetterSpawn").position;
 	}
 
     void Update()
@@ -44,7 +46,7 @@ public class LetterPickup : MonoBehaviour
     void SpawnLetter()
     {
         // Create the letter and give it a random direction to fly in initially 
-        GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.up, Random.rotation);
+        GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, spawnPos + Vector3.up, Random.rotation);
         letter.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-10, 10), letterLaunchForce, Random.Range(-10, 10)));
         letter.GetComponent<LetterFlyToCar>().enabled = true;
         letter.GetComponent<LetterFlyToCar>().SetCar(car);
