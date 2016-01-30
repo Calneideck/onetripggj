@@ -10,10 +10,12 @@ public class Car : MonoBehaviour
     public float rotationSpeed;
     public Text packageCountText;
     public Text currentPackageText;
+    public Text scoreText;
 
     private Rigidbody rb;
     private int packageCount = 0;
     private HouseStruct currentPackage;
+    private int score = 0;
 
     void Start ()
     {
@@ -49,17 +51,18 @@ public class Car : MonoBehaviour
 
     void DropLetter()
     {
-        // create the letter, giving it a bit of spin and turning triggers off so it collides with the world
-
         if (packageCount > 0)
         {
+            // create the letter, giving it a bit of spin and turning triggers off so it collides with the world
             GameObject letter = (GameObject)GameObject.Instantiate(letterPrefab, transform.position + Vector3.down * 1.5f, Random.rotation);
             letter.GetComponent<Rigidbody>().AddTorque(Vector3.one, ForceMode.Impulse);
             letter.GetComponent<BoxCollider>().isTrigger = false;
+            letter.GetComponent<Letter>().Setup(gameObject, currentPackage);
 
             packageCount--;
             packageCountText.text = "Packages: " + packageCount.ToString();
 
+            // If the last package was dropped, display 'No Package'
             if (packageCount > 0)
                 NewPackage();
             else
@@ -80,5 +83,11 @@ public class Car : MonoBehaviour
     {
         currentPackage = new HouseStruct(true);
         currentPackageText.text = currentPackage.colour.ToString() + " - " + currentPackage.packageType.ToString();
+    }
+
+    public void PackageDelivered()
+    {
+        score++;
+        scoreText.text = "Score: " + score.ToString();
     }
 }

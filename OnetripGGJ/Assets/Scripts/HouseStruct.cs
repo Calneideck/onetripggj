@@ -16,4 +16,14 @@ public struct HouseStruct
         this.colour = (HouseColour)Random.Range(0, System.Enum.GetNames(typeof(HouseColour)).Length);
         this.packageType = (PackageType)Random.Range(0, System.Enum.GetNames(typeof(PackageType)).Length);
     }
+
+    public static bool operator ==(HouseStruct a, HouseStruct b)
+    {
+        return (a.colour == b.colour && a.packageType == b.packageType);
+    }
+
+    public static bool operator !=(HouseStruct a, HouseStruct b)
+    {
+        return !(a.colour == b.colour && a.packageType == b.packageType);
+    }
 }
