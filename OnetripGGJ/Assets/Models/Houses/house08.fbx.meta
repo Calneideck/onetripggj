@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 8ea0923dff1dcf9418a0166dba8e6bb7
+timeCreated: 1454125269
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: door14
+    100002: door14 1
+    100004: door14 2
+    100006: door14 3
+    100008: door14 4
+    100010: door14 5
+    100012: door14 6
+    100014: door17
+    100016: door17 1
+    100018: door17 2
+    100020: door17 3
+    100022: door17 4
+    100024: door17 5
+    100026: door5
+    100028: door5 1
+    100030: door5 2
+    100032: door5 3
+    100034: door5 4
+    100036: door5 5
+    100038: door5 6
+    100040: door9
+    100042: door9 1
+    100044: door9 2
+    100046: door9 3
+    100048: door9 4
+    100050: door9 5
+    100052: doorCentre
+    100054: doorCentre 1
+    100056: doorFrame
+    100058: doorFrame 1
+    100060: doorKnob
+    100062: doorKnob 1
+    100064: fullDoor015
+    100066: fullDoor016
+    100068: //RootNode
+    100070: house08 1
+    100072: house08_upper
+    100074: longWindow041
+    100076: longWindow042
+    100078: longWindow043
+    100080: longWindow044
+    100082: longWindow045
+    100084: longWindow046
+    100086: pPlane1
+    100088: pPlane1 1
+    100090: pPlane1 2
+    100092: pPlane1 3
+    100094: pPlane1 4
+    100096: pPlane1 5
+    100098: pPlane1 6
+    100100: pPlane2
+    100102: pPlane2 1
+    100104: pPlane2 2
+    100106: pPlane2 3
+    100108: pPlane2 4
+    100110: pPlane2 5
+    100112: roof016
+    100114: roof017
+    100116: smallWindow043
+    100118: smallWindow044
+    100120: smallWindow045
+    100122: smallWindow047
+    100124: smallWindow048
+    100126: smallWindow049
+    100128: smallWindow050
+    100130: step
+    100132: step 1
+    400000: door14
+    400002: door14 1
+    400004: door14 2
+    400006: door14 3
+    400008: door14 4
+    400010: door14 5
+    400012: door14 6
+    400014: door17
+    400016: door17 1
+    400018: door17 2
+    400020: door17 3
+    400022: door17 4
+    400024: door17 5
+    400026: door5
+    400028: door5 1
+    400030: door5 2
+    400032: door5 3
+    400034: door5 4
+    400036: door5 5
+    400038: door5 6
+    400040: door9
+    400042: door9 1
+    400044: door9 2
+    400046: door9 3
+    400048: door9 4
+    400050: door9 5
+    400052: doorCentre
+    400054: doorCentre 1
+    400056: doorFrame
+    400058: doorFrame 1
+    400060: doorKnob
+    400062: doorKnob 1
+    400064: fullDoor015
+    400066: fullDoor016
+    400068: //RootNode
+    400070: house08 1
+    400072: house08_upper
+    400074: longWindow041
+    400076: longWindow042
+    400078: longWindow043
+    400080: longWindow044
+    400082: longWindow045
+    400084: longWindow046
+    400086: pPlane1
+    400088: pPlane1 1
+    400090: pPlane1 2
+    400092: pPlane1 3
+    400094: pPlane1 4
+    400096: pPlane1 5
+    400098: pPlane1 6
+    400100: pPlane2
+    400102: pPlane2 1
+    400104: pPlane2 2
+    400106: pPlane2 3
+    400108: pPlane2 4
+    400110: pPlane2 5
+    400112: roof016
+    400114: roof017
+    400116: smallWindow043
+    400118: smallWindow044
+    400120: smallWindow045
+    400122: smallWindow047
+    400124: smallWindow048
+    400126: smallWindow049
+    400128: smallWindow050
+    400130: step
+    400132: step 1
+    2300000: door14
+    2300002: door14 1
+    2300004: door14 2
+    2300006: door14 3
+    2300008: door14 4
+    2300010: door14 5
+    2300012: door14 6
+    2300014: door17
+    2300016: door17 1
+    2300018: door17 2
+    2300020: door17 3
+    2300022: door17 4
+    2300024: door17 5
+    2300026: door5
+    2300028: door5 1
+    2300030: door5 2
+    2300032: door5 3
+    2300034: door5 4
+    2300036: door5 5
+    2300038: door5 6
+    2300040: door9
+    2300042: door9 1
+    2300044: door9 2
+    2300046: door9 3
+    2300048: door9 4
+    2300050: door9 5
+    2300052: doorCentre
+    2300054: doorCentre 1
+    2300056: doorFrame
+    2300058: doorFrame 1
+    2300060: doorKnob
+    2300062: doorKnob 1
+    2300064: house08 1
+    2300066: house08_upper
+    2300068: pPlane1
+    2300070: pPlane1 1
+    2300072: pPlane1 2
+    2300074: pPlane1 3
+    2300076: pPlane1 4
+    2300078: pPlane1 5
+    2300080: pPlane1 6
+    2300082: pPlane2
+    2300084: pPlane2 1
+    2300086: pPlane2 2
+    2300088: pPlane2 3
+    2300090: pPlane2 4
+    2300092: pPlane2 5
+    2300094: roof016
+    2300096: roof017
+    2300098: step
+    2300100: step 1
+    3300000: door14
+    3300002: door14 1
+    3300004: door14 2
+    3300006: door14 3
+    3300008: door14 4
+    3300010: door14 5
+    3300012: door14 6
+    3300014: door17
+    3300016: door17 1
+    3300018: door17 2
+    3300020: door17 3
+    3300022: door17 4
+    3300024: door17 5
+    3300026: door5
+    3300028: door5 1
+    3300030: door5 2
+    3300032: door5 3
+    3300034: door5 4
+    3300036: door5 5
+    3300038: door5 6
+    3300040: door9
+    3300042: door9 1
+    3300044: door9 2
+    3300046: door9 3
+    3300048: door9 4
+    3300050: door9 5
+    3300052: doorCentre
+    3300054: doorCentre 1
+    3300056: doorFrame
+    3300058: doorFrame 1
+    3300060: doorKnob
+    3300062: doorKnob 1
+    3300064: house08 1
+    3300066: house08_upper
+    3300068: pPlane1
+    3300070: pPlane1 1
+    3300072: pPlane1 2
+    3300074: pPlane1 3
+    3300076: pPlane1 4
+    3300078: pPlane1 5
+    3300080: pPlane1 6
+    3300082: pPlane2
+    3300084: pPlane2 1
+    3300086: pPlane2 2
+    3300088: pPlane2 3
+    3300090: pPlane2 4
+    3300092: pPlane2 5
+    3300094: roof016
+    3300096: roof017
+    3300098: step
+    3300100: step 1
+    4300000: door9
+    4300002: door17
+    4300004: pPlane2
+    4300006: door9
+    4300008: door17
+    4300010: pPlane2
+    4300012: door9
+    4300014: door17
+    4300016: pPlane2
+    4300018: door9
+    4300020: door17
+    4300022: pPlane2
+    4300024: door9
+    4300026: door17
+    4300028: pPlane2
+    4300030: door5
+    4300032: door14
+    4300034: pPlane1
+    4300036: door5
+    4300038: door14
+    4300040: pPlane1
+    4300042: door5
+    4300044: door14
+    4300046: pPlane1
+    4300048: door5
+    4300050: door14
+    4300052: pPlane1
+    4300054: door5
+    4300056: door14
+    4300058: pPlane1
+    4300060: door5
+    4300062: door14
+    4300064: pPlane1
+    4300066: step
+    4300068: doorCentre
+    4300070: doorKnob
+    4300072: doorFrame
+    4300074: roof017
+    4300076: house08
+    4300078: house08_upper
+    4300080: step
+    4300082: doorCentre
+    4300084: doorKnob
+    4300086: doorFrame
+    4300088: door5
+    4300090: door14
+    4300092: pPlane1
+    4300094: door9
+    4300096: door17
+    4300098: pPlane2
+    4300100: roof016
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
