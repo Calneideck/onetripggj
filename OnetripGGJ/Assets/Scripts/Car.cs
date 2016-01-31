@@ -205,6 +205,8 @@ public class Car : MonoBehaviour
         score += 10;
         scoreText.text = "Score: " + score.ToString();
         bonusTime += timeBonus;
+
+        audioSource.volume = 0.2f;
         audioSource.clip = ding;
         audioSource.Play();
     }

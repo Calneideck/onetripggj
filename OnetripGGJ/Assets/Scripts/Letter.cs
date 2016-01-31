@@ -42,6 +42,7 @@ public class Letter : MonoBehaviour
         {
             coll.GetComponent<Car>().ReceivedLetter();
             lp.PackagePickedUp();
+            audioSource.volume = 1;
             audioSource.clip = whoosh;
             audioSource.Play();
             Remove();
