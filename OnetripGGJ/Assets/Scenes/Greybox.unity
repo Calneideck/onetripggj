@@ -9221,9 +9221,9 @@ MonoBehaviour:
   - {fileID: 108424, guid: 84f7d4e6327263a47b1df8eb07f724fd, type: 2}
   accel: 30
   maxSpeed: 50
-  rotationSpeed: 40
-  initialTime: 60
-  timeBonus: 0
+  rotationSpeed: 45
+  initialTime: 5
+  timeBonus: 10
   currentPackageColourImage: {fileID: 193116772}
   currentPackageImage: {fileID: 1220069395}
   colourTextures:
@@ -9247,6 +9247,7 @@ MonoBehaviour:
   countdownText: {fileID: 313116657}
   scoreText: {fileID: 350046522}
   timeText: {fileID: 1389701453}
+  ding: {fileID: 8300000, guid: f9d4c696689753a4c9b7cd2603e7efb2, type: 3}
 --- !u!65 &339976343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9258,8 +9259,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.4, y: 1.59, z: 2.2}
+  m_Center: {x: 0, y: -0.25, z: -0.07}
 --- !u!4 &344889318 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4e7a5b28070e3ab4cb6857375cdfc683, type: 3}
