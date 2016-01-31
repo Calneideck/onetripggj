@@ -19,6 +19,7 @@ public class Car : MonoBehaviour
     public Text countdownText;
     public Text scoreText;
     public Text timeText;
+    public AudioClip ding;
 
     private Rigidbody rb;
     private int packageCount = 0;
@@ -32,10 +33,12 @@ public class Car : MonoBehaviour
     private bool started = false;
     private bool gameOver = false;
     private bool go = false;
+    private AudioSource audioSource;
 
-    void Start ()
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = transform.Find("Audio Source").GetComponent<AudioSource>();
         countdownStartTime = Time.time;
 
         currentPackageColourImage.texture = greyTexture;
@@ -43,7 +46,7 @@ public class Car : MonoBehaviour
 
         timeText.text = "Time: " + Mathf.Ceil(initialTime);
     }
-	
+    	
     void Update()
     {
         if (started)
@@ -101,10 +104,7 @@ public class Car : MonoBehaviour
             remainingTime = 0;
 
             if (!gameOver)
-            {
-                GameObject.Find("UI").GetComponent<ShowPanels>().EndScreen(true);
-                gameOver = true;
-            }
+                GameOver();
         }
 
         timeText.text = "Time: " + Mathf.Ceil(remainingTime);
@@ -120,6 +120,16 @@ public class Car : MonoBehaviour
             go = true;
             countdownText.gameObject.SetActive(false);
         }
+    }
+
+    void GameOver()
+    {
+        GameObject.Find("UI").GetComponent<ShowPanels>().EndScreen(true, score);
+        gameOver = true;
+        nextPackageImages[0].SetActive(false);
+        nextPackageImages[1].SetActive(false);
+        currentPackageImage.gameObject.SetActive(false);
+        currentPackageColourImage.gameObject.SetActive(false);
     }
 
     void DropLetter()
@@ -195,6 +205,8 @@ public class Car : MonoBehaviour
         score += 10;
         scoreText.text = "Score: " + score.ToString();
         bonusTime += timeBonus;
+        audioSource.clip = ding;
+        audioSource.Play();
     }
 
     public int PackageCount

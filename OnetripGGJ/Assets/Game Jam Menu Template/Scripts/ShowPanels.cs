@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ShowPanels : MonoBehaviour {
@@ -8,7 +9,7 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
     public GameObject gameOverPanel;
-
+    public Text scoreText;
 
 	//Call this function to activate and display the Options panel during the main menu
 	public void ShowOptionsPanel()
@@ -51,10 +52,12 @@ public class ShowPanels : MonoBehaviour {
 
 	}
 
-    public void EndScreen(bool active)
+    public void EndScreen(bool active, int score)
     {
         optionsTint.SetActive(active);
         gameOverPanel.SetActive(active);
+        scoreText.text = "You scored: " + score.ToString() + " points!";
+
         if (active)
             Time.timeScale = 0;
         else
