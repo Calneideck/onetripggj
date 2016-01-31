@@ -52,6 +52,17 @@ public class ShowPanels : MonoBehaviour {
 
 	}
 
+    public void CloseEndScreen(bool active)
+    {
+        optionsTint.SetActive(active);
+        gameOverPanel.SetActive(active);
+
+        if (active)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
+
     public void EndScreen(bool active, int score)
     {
         optionsTint.SetActive(active);

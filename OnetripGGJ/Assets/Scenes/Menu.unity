@@ -530,7 +530,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2072574908}
-        m_MethodName: EndScreen
+        m_MethodName: CloseEndScreen
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1916,7 +1916,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2072574908}
-        m_MethodName: EndScreen
+        m_MethodName: CloseEndScreen
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
