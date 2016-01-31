@@ -2796,7 +2796,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.17, y: 3.5, z: 6.83}
+  m_Size: {x: 8, y: 3.5, z: 7.5}
   m_Center: {x: 0.64, y: 0.8, z: 0}
 --- !u!95 &9592550
 Animator:
@@ -2846,6 +2846,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.z
+      value: 7.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
