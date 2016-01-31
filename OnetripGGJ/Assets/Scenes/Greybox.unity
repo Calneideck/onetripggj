@@ -12157,10 +12157,10 @@ MonoBehaviour:
   - {fileID: 104610, guid: c0616d75650b5eb44bcaafe1ab7976a0, type: 2}
   - {fileID: 108424, guid: 84f7d4e6327263a47b1df8eb07f724fd, type: 2}
   accel: 30
-  maxSpeed: 50
+  maxSpeed: 55
   rotationSpeed: 45
-  initialTime: 5
-  timeBonus: 10
+  initialTime: 60
+  timeBonus: 15
   currentPackageColourImage: {fileID: 193116772}
   currentPackageImage: {fileID: 1220069395}
   colourTextures:
