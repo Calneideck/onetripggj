@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: OnetripGGJ
+  companyName: OneTripGGJ
+  productName: Post Haste
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -84,9 +84,9 @@ PlayerSettings:
   wiiUAllowScreenCapture: 1
   wiiUControllerCount: 0
   m_SupportedAspectRatios:
-    4:3: 0
-    5:4: 0
-    16:10: 0
+    4:3: 1
+    5:4: 1
+    16:10: 1
     16:9: 1
     Others: 0
   bundleIdentifier: com.Company.ProductName
@@ -168,13 +168,13 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: f76975a55996cc34d8044486f9123cc0,
+  resolutionDialogBanner: {fileID: 2800000, guid: e6203b90184f33e47b061036d7afb31b,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 760ccfc77e0bc33489c8477c16e9cd12, type: 3}
       m_Width: 128
       m_Height: 128
   - m_BuildTarget: Standalone
@@ -361,7 +361,8 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    2: 
   metroPackageName: OnetripGGJ
   metroPackageVersion: 
   metroCertificatePath: 
