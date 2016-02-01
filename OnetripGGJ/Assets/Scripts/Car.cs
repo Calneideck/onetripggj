@@ -12,6 +12,8 @@ public class Car : MonoBehaviour
     public int timeBonus;
     public RawImage currentPackageColourImage;
     public RawImage currentPackageImage;
+    public Text currentPackageColourText;
+    public Text currentPackageTypeText;
     public Texture[] colourTextures;
     public Texture[] packageTypeTextures;
     public Texture greyTexture;
@@ -41,8 +43,7 @@ public class Car : MonoBehaviour
         audioSource = transform.Find("Audio Source").GetComponent<AudioSource>();
         countdownStartTime = Time.time;
 
-        currentPackageColourImage.texture = greyTexture;
-        currentPackageImage.gameObject.SetActive(false);
+        NoPackage();
 
         timeText.text = "Time: " + Mathf.Ceil(initialTime);
     }
@@ -128,7 +129,7 @@ public class Car : MonoBehaviour
         gameOver = true;
         nextPackageImages[0].SetActive(false);
         nextPackageImages[1].SetActive(false);
-        currentPackageImage.gameObject.SetActive(false);
+        NoPackage();
         currentPackageColourImage.gameObject.SetActive(false);
     }
 
@@ -155,8 +156,7 @@ public class Car : MonoBehaviour
                 NewPackage();
             else
             {
-                currentPackageColourImage.texture = greyTexture;
-                currentPackageImage.gameObject.SetActive(false);
+                NoPackage();
             }
 
             SetNextPackageImages();
@@ -192,12 +192,22 @@ public class Car : MonoBehaviour
         }
     }
 
+    void NoPackage()
+    {
+        currentPackageColourImage.texture = greyTexture;
+        currentPackageImage.gameObject.SetActive(false);
+        currentPackageColourText.text = "";
+        currentPackageTypeText.text = "";
+    }
+
     public void NewPackage()
     {
         currentPackage = new HouseStruct(true);
         currentPackageColourImage.texture = colourTextures[(int)currentPackage.colour];
         currentPackageImage.gameObject.SetActive(true);
         currentPackageImage.texture = packageTypeTextures[(int)currentPackage.packageType];
+        currentPackageColourText.text = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(currentPackage.colour.ToString().ToLower()) + " House";
+        currentPackageTypeText.text = currentPackage.packageType == PackageType.BBQ ? "BBQ" : System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(currentPackage.packageType.ToString().ToLower());
     }
 
     public void PackageDelivered()
