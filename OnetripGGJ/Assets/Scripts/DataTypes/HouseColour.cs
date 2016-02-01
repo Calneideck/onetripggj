@@ -3,5 +3,5 @@
     RED,
     GREEN,
     BLUE,
-    YELLOW
+    ORANGE
 }

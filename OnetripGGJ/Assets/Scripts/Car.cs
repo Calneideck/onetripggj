@@ -18,6 +18,7 @@ public class Car : MonoBehaviour
     public Texture[] packageTypeTextures;
     public Texture greyTexture;
     public GameObject[] nextPackageImages;
+    public GameObject goTo;
     public Text countdownText;
     public Text scoreText;
     public Text timeText;
@@ -131,6 +132,7 @@ public class Car : MonoBehaviour
         nextPackageImages[1].SetActive(false);
         NoPackage();
         currentPackageColourImage.gameObject.SetActive(false);
+        goTo.SetActive(false);
     }
 
     void DropLetter()
@@ -155,9 +157,7 @@ public class Car : MonoBehaviour
             if (packageCount > 0)
                 NewPackage();
             else
-            {
                 NoPackage();
-            }
 
             SetNextPackageImages();
         }
