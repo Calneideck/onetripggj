@@ -52,12 +52,12 @@ public class Car : MonoBehaviour
         if (started)
         {
             // Steering
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) || Input.GetAxis("Horizontal") < 0)
                 transform.Rotate(transform.up, -rotationSpeed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D) || Input.GetAxis("Horizontal") > 0)
                 transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetButtonDown("Drop"))
                 DropLetter();
 
             GameTimer();
@@ -85,10 +85,10 @@ public class Car : MonoBehaviour
 
         // Forward and reverse movement
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetButton("Accel"))
             rb.AddForce(transform.forward * accel);
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetButton("Rev"))
             rb.AddForce(transform.forward * -1 * accel);
 
         if (rb.velocity.magnitude > maxSpeed)
