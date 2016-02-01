@@ -207,7 +207,7 @@ public class Car : MonoBehaviour
         currentPackageImage.gameObject.SetActive(true);
         currentPackageImage.texture = packageTypeTextures[(int)currentPackage.packageType];
         currentPackageColourText.text = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(currentPackage.colour.ToString().ToLower()) + " House";
-        currentPackageTypeText.text = currentPackage.packageType == PackageType.BBQ ? "BBQ" : System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(currentPackage.packageType.ToString().ToLower());
+        currentPackageTypeText.text = currentPackage.packageType == PackageType.BBQ ?"With " + "BBQ" : "With " + System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(currentPackage.packageType.ToString().ToLower());
     }
 
     public void PackageDelivered()
