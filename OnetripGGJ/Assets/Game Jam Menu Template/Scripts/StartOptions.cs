@@ -104,6 +104,12 @@ public class StartOptions : MonoBehaviour {
 
 	}
 
+    void Update()
+    {
+        if (inMainMenu)
+            if (Input.GetButton("Drop"))
+                StartButtonClicked(1);
+    }
 
 	public void PlayNewMusic()
 	{
