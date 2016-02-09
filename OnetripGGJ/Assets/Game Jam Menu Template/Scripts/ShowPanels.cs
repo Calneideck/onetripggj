@@ -4,7 +4,8 @@ using System.Collections;
 
 public class ShowPanels : MonoBehaviour {
 
-	public GameObject optionsPanel;							//Store a reference to the Game Object OptionsPanel 
+    public StartOptions startOptions;
+    public GameObject optionsPanel;							//Store a reference to the Game Object OptionsPanel 
 	public GameObject optionsTint;							//Store a reference to the Game Object OptionsTint 
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
@@ -49,18 +50,14 @@ public class ShowPanels : MonoBehaviour {
 	{
 		pausePanel.SetActive (false);
 		optionsTint.SetActive(false);
-
 	}
 
-    public void CloseEndScreen(bool active)
+    public void CloseEndScreen()
     {
-        optionsTint.SetActive(active);
-        gameOverPanel.SetActive(active);
+        optionsTint.SetActive(false);
+        gameOverPanel.SetActive(false);
 
-        if (active)
-            Time.timeScale = 0;
-        else
-            Time.timeScale = 1;
+        Time.timeScale = 1;
     }
 
     public void EndScreen(bool active, int score)
@@ -73,5 +70,24 @@ public class ShowPanels : MonoBehaviour {
             Time.timeScale = 0;
         else
             Time.timeScale = 1;
+    }
+
+    void Update()
+    {
+        if (gameOverPanel.activeSelf)
+        {
+            if (Input.GetButtonDown("Drop"))
+            {
+                // Restart
+                CloseEndScreen();
+                startOptions.StartButtonClicked(2);
+            }
+            else if (Input.GetButtonDown("Back"))
+            {
+                // Menu
+                CloseEndScreen();
+                startOptions.StartButtonClicked(1);
+            }
+        }
     }
 }

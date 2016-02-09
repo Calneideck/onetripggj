@@ -20,7 +20,7 @@ public class PlayMusic : MonoBehaviour {
 	//Used if running the game in a single scene, takes an integer music source allowing you to choose a clip by number and play.
 	public void PlaySelectedMusic(int musicChoice)
 	{
-		//Play the music clip at the array index musicChoice
+        //Play the music clip at the array index musicChoice
 		musicSource.clip = musicClips [musicChoice];
 
 		//Play the selected clip
