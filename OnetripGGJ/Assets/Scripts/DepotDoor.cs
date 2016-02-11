@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class DepotDoor : MonoBehaviour
 {
-    public GameObject door;
     public Animator anim;
-
-    private bool playing = false;
-    private float startTime;
 
     void OnTriggerEnter(Collider coll)
     {

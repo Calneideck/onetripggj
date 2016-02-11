@@ -17,6 +17,7 @@ public class Car : MonoBehaviour
     public Texture[] colourTextures;
     public Texture[] packageTypeTextures;
     public Texture greyTexture;
+    public Texture depotImage;
     public GameObject[] nextPackageImages;
     public GameObject goTo;
     public Text countdownText;
@@ -132,6 +133,7 @@ public class Car : MonoBehaviour
         nextPackageImages[1].SetActive(false);
         NoPackage();
         currentPackageColourImage.gameObject.SetActive(false);
+        currentPackageImage.gameObject.SetActive(false);
         goTo.SetActive(false);
     }
 
@@ -195,7 +197,7 @@ public class Car : MonoBehaviour
     void NoPackage()
     {
         currentPackageColourImage.texture = greyTexture;
-        currentPackageImage.gameObject.SetActive(false);
+        currentPackageImage.texture = depotImage;
         currentPackageColourText.text = "";
         currentPackageTypeText.text = "";
     }
