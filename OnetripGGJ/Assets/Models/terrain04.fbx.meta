@@ -1,82 +1,15 @@
 fileFormatVersion: 2
-guid: 49e0ff3b730701149b04f1423e682394
-timeCreated: 1454131747
+guid: 5dfae2da6f0b7594b8f6e3f3d6e5870f
+timeCreated: 1455163599
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube62
-    100004: pCube63
-    100006: pCube64
-    100008: pCube65
-    100010: pCube66
-    100012: pCube67
-    100014: pCube68
-    100016: pCube69
-    100018: pCube70
-    100020: pCube71
-    100022: pCube72
-    100024: pCube73
-    100026: pCube74
-    100028: pCube75
     400000: //RootNode
-    400002: pCube62
-    400004: pCube63
-    400006: pCube64
-    400008: pCube65
-    400010: pCube66
-    400012: pCube67
-    400014: pCube68
-    400016: pCube69
-    400018: pCube70
-    400020: pCube71
-    400022: pCube72
-    400024: pCube73
-    400026: pCube74
-    400028: pCube75
-    2300000: pCube62
-    2300002: pCube63
-    2300004: pCube64
-    2300006: pCube65
-    2300008: pCube66
-    2300010: pCube67
-    2300012: pCube68
-    2300014: pCube69
-    2300016: pCube70
-    2300018: pCube71
-    2300020: pCube72
-    2300022: pCube73
-    2300024: pCube74
-    2300026: pCube75
-    3300000: pCube62
-    3300002: pCube63
-    3300004: pCube64
-    3300006: pCube65
-    3300008: pCube66
-    3300010: pCube67
-    3300012: pCube68
-    3300014: pCube69
-    3300016: pCube70
-    3300018: pCube71
-    3300020: pCube72
-    3300022: pCube73
-    3300024: pCube74
-    3300026: pCube75
-    4300000: pCube62
-    4300002: pCube63
-    4300004: pCube64
-    4300006: pCube65
-    4300008: pCube66
-    4300010: pCube67
-    4300012: pCube69
-    4300014: pCube70
-    4300016: pCube71
-    4300018: pCube72
-    4300020: pCube73
-    4300022: pCube74
-    4300024: pCube68
-    4300026: pCube75
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -102,8 +35,8 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 150
-    meshCompression: 3
+    globalScale: 1000
+    meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
